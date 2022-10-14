@@ -1,6 +1,6 @@
 @use "../../variables";
 
-.toolbar {
+.menu {
   position: sticky;
   top: 0;
   left: 0;
@@ -8,15 +8,32 @@
   height: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   //background-color: transparentize(variables.$primary-color, 0.85);
   color: white;
   font-weight: 600;
-  a {
+  padding: 0 10px 0 14px;
+  a.menu-item {
     text-decoration: none;
     color: variables.$white-color;
     margin-right: 2em;
   }
-  img {
-    margin: 0 14%;
+  img#logo {
+    margin-right: 14%;
+  }
+  .social-wrapper {
+    display: flex;
+    align-items: center;
+
+    .social-button {
+      background-color: variables.$background-alternative-color;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+    }
   }
 }

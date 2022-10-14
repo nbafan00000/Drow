@@ -1,14 +1,19 @@
-<div class="toolbar" role="banner">
+<div class="menu" role="banner">
   <img
-    width="222"
-    alt="Angular Logo"
+    alt="Logo"
     src="../../assets/logo.svg"
   />
-  <div class="spacer"></div>
-  <a aria-label="Brain Training" target="brain-training" href="/{{menuItem.slug}}" title="Brain Training" *ngFor="let menuItem of menuItems">
-    {{menuItem.label}}
-  </a>
   <span>
-    
+    <a aria-label="Brain Training" target="brain-training" href="/{{menuItem.slug}}" title="Brain Training" *ngFor="let menuItem of menuItems" class="menu-item">
+      {{menuItem.label}}
+    </a>
   </span>
+  <div class="social-wrapper">
+    <a href="" class="social-button">
+      <img src="../../assets/google-play-logo.svg" />
+    </a>
+    <a href="" class="social-button">
+      <img src="../../assets/apple-logo.svg" />
+    </a>
+  </div>
 </div>
