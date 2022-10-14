@@ -1,3 +1,5 @@
+@use "../../variables";
+
 button {
   width: 220px;
   height: 70px;
@@ -6,4 +8,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  outline: none;
+  border-width: 0;
+  color: variables.$white-color;
+  font-family: 'Comfortaa';
+  font-weight: 700;
+
+  &:active {
+    border-style: outset;
+  }
 }

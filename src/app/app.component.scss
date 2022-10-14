@@ -28,32 +28,38 @@
     .row {
       display: flex;
       flex-direction: row;
-      align-items: center;
       flex-wrap: wrap;
       padding-left: 4.17%;
       padding-right: 2.72%;
       justify-content: space-between;
+      margin-top: 89px;
       .left {
         max-width: 585px;
+        margin-top: 110.37px;
         h1 {
           font-size: 78px;
           font-weight: 300;
+          margin: 0;
         }
         h3 {
           font-size: 28px;
           font-weight: 400;
         }
+        .button-wrapper {
+          margin: 51px 0 97.79px;
+        }
         #bitbrain-image {
           width: auto;
           height: auto;
           position: relative;
+          max-width: 100%;
         }
       }
      
       #iphone-image {
         position: relative;
         width: auto;
-        max-width: 693.48px;
+        max-width: 100%;
         height: auto;
       }
     }
