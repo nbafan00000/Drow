@@ -1,0 +1,22 @@
+@use "../../variables";
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  //background-color: transparentize(variables.$primary-color, 0.85);
+  color: white;
+  font-weight: 600;
+  a {
+    text-decoration: none;
+    color: variables.$white-color;
+    margin-right: 2em;
+  }
+  img {
+    margin: 0 14%;
+  }
+}
