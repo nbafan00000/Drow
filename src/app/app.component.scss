@@ -28,56 +28,7 @@
     width: 100%;
     flex: 1;
     position: relative;
-    h1 {
-      font-size: 78px;
-      font-weight: 300;
-      margin: 0;
-    }
-    h2 {
-      font-size: 48px;
-      font-weight: 300;
-    }
-    h3 {
-      font-size: 28px;
-      font-weight: 400;
-      letter-spacing: 0.01em;
-      text-transform: lowercase;
-      font-family: 'Work Sans';
-      color: rgba(255, 255, 255, 0.8);
-      margin-top: 16px;
-    }
-    .home {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding-left: 4.17%;
-      padding-right: 2.72%;
-      justify-content: space-between;
-      margin-top: 89px; 
-      .left {
-        max-width: 585px;
-        margin-top: 110.37px;
-       
-        .button-wrapper {
-          margin: 51px 0 97.79px;
-        }
-        img#bitbrain-image {
-          width: auto;
-          height: auto;
-          position: relative;
-          max-width: 100%;
-          @media (max-width: 834px) {
-            display: none;
-          }
-        }
-      }
-      img#iphone-image {
-        position: relative;
-        width: auto;
-        max-width: 100%;
-        height: auto;
-      }
-    }
+   
     .sleep-efficiency {
       padding: 112px 144px 141px 79px;
       .top-spacing {
