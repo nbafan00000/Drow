@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  isTop: boolean = true;
 
   constructor() { }
   menuItems = [
@@ -35,4 +36,8 @@ export class HeaderComponent implements OnInit {
     
   }
 
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+    this.isTop = window.scrollY === 0;
+  }
 }
