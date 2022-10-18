@@ -17,10 +17,10 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({
-      "radius": 62,
+      "radius": 61,
       "outerStrokeWidth": 6,
-      "outerStrokeColor": "#323232",
-      "innerStrokeWidth": 0,
+      "innerStrokeWidth": 6,
+      "space": -6,
       "animationDuration": 1000,
       "showUnits": true,
       "showBackground": false,
