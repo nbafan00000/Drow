@@ -1,0 +1,101 @@
+@use "../../variables";
+
+.sleep-efficiency {
+  padding: 112px 144px 141px 79px;
+  .top-spacing {
+    margin-top: 64px; 
+  }
+  .center-aligned {
+    align-items: center;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    h2 {
+      align-items: center;
+      display: flex;
+      font-size: 48px;
+      font-weight: 300;
+      
+      img {
+        width: 96px;
+        height: 96px;
+        margin-left: 48px;
+      }
+    }
+    .left {
+      width: 779px!important;
+    }
+    .right {
+      margin-left: 28px;
+    }
+    .charts {
+      display: flex;
+      flex-direction: row;
+      .circle {
+        width: 124px;
+        height: 124px;
+        border-radius: 50%;
+        background-color: variables.$background-alternative-color;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        position: relative;
+        &.center {
+          margin-top: 33px;
+        }
+      }
+      .first {
+        margin-right: 21.06px;
+      }
+      .second {
+        margin-right: 60px;
+        #bottom-progress {
+          margin-top: 18px;
+        }
+      }
+      .third {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .brain {
+          width: 260px;
+          height: 112px;
+          background-color: variables.$primary-color;
+          border-radius: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-top: 39px;
+          .circle {
+            margin-right: 22px;
+          }
+        }
+      }
+    }
+    .description {
+      h4.title {
+        color: variables.$alternative-blue-color;
+        font-weight: 700;
+        font-size: 32px;
+        max-width: 383px;
+      }
+      p {
+        font-family: 'Work Sans';
+        font-weight: 400;
+        text-transform: lowercase;
+        line-height: 34px;
+        letter-spacing: 0.01em;
+        font-size: 20px;
+        max-width: 507px;
+        color: variables.$p-color;
+        margin-top: 20px;
+      }
+    }
+  }
+}

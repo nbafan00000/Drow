@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ButtonComponent } from './components/button/button.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HomeComponent } from './pages/home/home.component';
+import { SleepEfficiencyComponent } from './pages/sleep-efficiency/sleep-efficiency.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { HomeComponent } from './pages/home/home.component';
     HeaderComponent,
     ButtonComponent,
     HomeComponent,
+    SleepEfficiencyComponent,
   ],
   imports: [
     BrowserModule,
