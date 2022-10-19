@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { SleepEfficiencyComponent } from './pages/sleep-efficiency/sleep-efficiency.component';
 import { HeadsetComponent } from './pages/headset/headset.component';
 import { BrainTrainingComponent } from './pages/brain-training/brain-training.component';
+import { ParallaxComponent } from './pages/parallax/parallax.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { BrainTrainingComponent } from './pages/brain-training/brain-training.co
     SleepEfficiencyComponent,
     HeadsetComponent,
     BrainTrainingComponent,
+    ParallaxComponent,
   ],
   imports: [
     BrowserModule,

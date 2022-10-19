@@ -9,8 +9,7 @@
   min-height: 100vh;
   color: variables.$white-color;
   .page {
-    background: #030B31;
-
+    background: variables.$background-color;
     background-image: url(../assets/home-bg.png);
     background-repeat: no-repeat;
     background-size: 100%;

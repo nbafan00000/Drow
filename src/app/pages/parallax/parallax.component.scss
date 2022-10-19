@@ -1,0 +1,16 @@
+@use "../../variables";
+
+.parallax {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 59px 0 56px;
+  background-color: variables.$background-color;
+  position: relative;
+  overflow: hidden;
+  .sleep-diary {
+    background-color: variables.$background-alternative-color;
+    width: 100%;
+    border-radius: 14px;    
+  }
+}

@@ -1,0 +1,30 @@
+@use "../../variables";
+
+.brain-training {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0 69px;
+  background-color: variables.$background-alternative-color;
+  position: relative;
+  overflow: hidden;
+
+  h2 {
+    font-weight: 400;
+    font-size: 48px;
+    width: 704px;
+    text-align: center;
+    line-height: 60px;
+  }
+  img#iphone-14 {
+    margin-top: 72px;
+  }
+  img#card {
+    position: absolute;
+    bottom: 154.04px;
+  }
+  img#card2 {
+    position: absolute;
+    bottom: 0;
+  }
+}
