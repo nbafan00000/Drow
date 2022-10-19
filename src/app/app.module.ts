@@ -9,6 +9,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HomeComponent } from './pages/home/home.component';
 import { SleepEfficiencyComponent } from './pages/sleep-efficiency/sleep-efficiency.component';
 import { HeadsetComponent } from './pages/headset/headset.component';
+import { BrainTrainingComponent } from './pages/brain-training/brain-training.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HeadsetComponent } from './pages/headset/headset.component';
     HomeComponent,
     SleepEfficiencyComponent,
     HeadsetComponent,
+    BrainTrainingComponent,
   ],
   imports: [
     BrowserModule,
