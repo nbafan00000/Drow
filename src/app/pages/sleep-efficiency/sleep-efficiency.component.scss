@@ -13,8 +13,6 @@
     align-items: center;
   }
   .row {
-    display: flex;
-    flex-direction: row;
     h2 {
       align-items: center;
       display: flex;
@@ -71,8 +69,6 @@
           align-items: center;
         }
         .row {
-          display: flex;
-          flex-direction: row;
           align-items: center;
           margin-top: 39px;
           .circle {

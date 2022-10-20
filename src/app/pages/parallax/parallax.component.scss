@@ -6,9 +6,10 @@
   background-color: variables.$background-color;
   position: relative;
   overflow: hidden;
+  flex-direction: column;
+  align-items: stretch;
   .sleep-diary {
     background-color: variables.$background-alternative-color;
-    width: 100%;
     border-radius: 14px;
     padding: 0 73px;
     display: flex;
@@ -29,14 +30,8 @@
         line-height: 60px;
       }
       p {
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 400;
         width: 367px;
-        font-size: 20px;
-        line-height: 34px;
         margin-top: 14px;
-        color: variables.$p-color;
-        letter-spacing: 0.01em;
         &.comment {
           margin-top: 194px;
           font-family: 'Work Sans', sans-serif;
@@ -59,8 +54,21 @@
   .box {
     background-color: variables.$background-secondary-color;
     border-radius: 14px;
-    &.#track-progress {
-      
+    &#track-progress {
+      padding: 44.25px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      h3 {
+        margin-top: 23px;
+      }
     }
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    line-height: 48px;
   }
 }

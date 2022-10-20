@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@use "./app/variables";
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700");
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;1,300&display=swap');
 
@@ -13,4 +14,36 @@ body::-webkit-scrollbar {
 
 h1, h2, h3, h4, h5, p {
   margin: 0;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 60px;
+}
+
+h5 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: variables.$p-color;
+  letter-spacing: 0.01em;
+ 
+  &.center {
+    text-align: center;
+  }
+  &.lowercase {
+    text-transform: lowercase;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
 }
