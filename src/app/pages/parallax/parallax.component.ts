@@ -35,7 +35,27 @@ export class ParallaxComponent implements OnInit {
       answer: "Because they're so good at it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
     }
   ];
-  
+
+  blogs = [
+    {
+    },
+    {
+    },
+    {
+    }
+  ];
+
+  positions = [
+    {
+      title: 'UI/UX Designer',
+      location: 'Remote',
+    },
+    {
+      title: 'Developer',
+      location: 'Oslo',
+    }
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
