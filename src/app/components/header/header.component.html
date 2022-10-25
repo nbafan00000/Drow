@@ -6,7 +6,7 @@
     [ngClass]="isTop ? 'top' : ''"
   />
   <span>
-    <a aria-label="Brain Training" target="brain-training" href="/{{menuItem.slug}}" title="Brain Training" *ngFor="let menuItem of menuItems" class="menu-item" [ngClass]="isTop ? 'top' : ''">
+    <a aria-label="Brain Training" href="#{{menuItem.slug}}" *ngFor="let menuItem of menuItems" class="menu-item" [ngClass]="isTop ? 'top' : ''">
       {{menuItem.label}}
     </a>
   </span>
@@ -15,7 +15,7 @@
       <img src="../../assets/google-play-logo.svg" />
     </a>
     <a href="" class="social-button" [ngClass]="isTop ? 'top' : ''">
-      <img src="../../assets/apple-logo.svg" stroke="red" />
+      <img src="../../assets/apple-logo.svg" />
     </a>
   </div>
 </div>

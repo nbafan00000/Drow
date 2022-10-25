@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
     },
     {
       label: 'EEG Headset',
-      slug: 'eeg-headset'
+      slug: 'headset'
     },
     {
       label: 'For Clinicians',
