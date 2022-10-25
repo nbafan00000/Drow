@@ -1,3 +1,3 @@
-<button [ngStyle]="{'background-color': bgColor }" >
+<button [ngStyle]="{'background-color': !disabled ? (hover ? colors[type].bgColor : colors[type].hoverColor) : colors[type].disabledColor }" (mouseover)="hover=true" (mouseleave)="hover=false" [disabled]="disabled">
   {{label}}
 </button>
