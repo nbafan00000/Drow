@@ -18,21 +18,17 @@
       display: flex;
       font-size: 48px;
       font-weight: 300;
-      img {
+      #caret {
         width: 96px;
         height: 96px;
-        margin-left: 48px;
+        margin: 0 28px 0 20px;
       }
-    }
-    .left {
-      width: 779px!important;
-    }
-    .right {
-      margin-left: 28px;
     }
     .charts {
       display: flex;
       flex-direction: row;
+      width: 779px;
+
       .circle {
         width: 124px;
         height: 124px;
@@ -99,5 +95,29 @@
         margin-top: 27px;
       }
     }
+  }
+  @media only screen and (max-width: 1207px) {
+    #caret {
+      margin: 0 22px 0 0 !important;
+    }
+  }
+  @media only screen and (max-width: variables.$medium-width) {
+    padding: 140.17px 44px 0px 29px;
+    .row {
+      h2 {
+        font-size: 32px !important;
+        #caret {
+          width: 64px !important;
+          height: 64px !important;
+          margin-left: 0 !important;
+        }
+      }
+      .left {
+        width: auto !important;
+      }
+    }   
+  }
+  @media only screen and (max-width: variables.$small-width) {
+   
   }
 }
