@@ -9,31 +9,34 @@
     </div>
   </div>
   <div class="row top-spacing">
-    <div class="charts left">
+    <div class="charts">
       <div class="first">
-        <circle-progress
-          [percent]="85"
-          [outerStrokeGradient]="true"
-          [outerStrokeColor]="'#4C48F4'"
-          [innerStrokeColor]="'#1C2A71'"
-          [outerStrokeGradientStopColor]="'#9193FF'"
-          [titleColor]="'#ffffff'"
-          [animation]="true"
-          [animationDuration]="1000"
-        >
-        </circle-progress>
+        <div class="circle">
+          <circle-progress
+            [percent]="85"
+            [outerStrokeGradient]="true"
+            [outerStrokeColor]="'#4C48F4'"
+            [innerStrokeColor]="'#1C2A71'"
+            [outerStrokeGradientStopColor]="'#9193FF'"
+            [titleColor]="'#ffffff'"
+            [animation]="true"
+            [animationDuration]="1000"
+            [responsive]="true"
+          >
+          </circle-progress>
+        </div>
       </div>
       <div class="second">
-        <div>
+        <div class="circle">
           <img src="../assets/face.svg" />
         </div>
-        <div class="circle center">
+        <div class="circle center moon-star">
           <img src="../assets/moon-stars.svg" />
         </div>
         <div class="circle center">
           <img src="../assets/face-2.svg" />
         </div>
-        <div id="bottom-progress">
+        <div id="bottom-progress" class="circle">
           <circle-progress
             [percent]="71"
             [outerStrokeGradient]="true"
@@ -43,6 +46,7 @@
             [titleColor]="'#ffffff'"
             [animation]="true"
             [animationDuration]="1000"
+            [responsive]="true"
           >
           </circle-progress>
         </div>
@@ -55,7 +59,7 @@
           <div class="circle">
             <img src="../assets/face-3.svg" />
           </div>
-          <div>
+          <div class="circle">
             <circle-progress
               [percent]="60"
               [outerStrokeColor]="'#DB9A4E'"
@@ -63,6 +67,7 @@
               [titleColor]="'#ffffff'"
               [animation]="true"
               [animationDuration]="1000"
+              [responsive]="true"
             >
             </circle-progress>
           </div>

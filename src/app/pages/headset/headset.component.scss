@@ -10,8 +10,8 @@
   background-size: 100% 100%;
 
   h2 {
-    display: flex;
     text-align: center;
+    width: 404px;
   }
   #bitbrain-img {
     margin-top: 42px;
@@ -21,27 +21,60 @@
     margin-top: 35px;
   }
   .row {
-    margin-top: 121.47px;
+    margin-top: 61px;
     .column {
       display: flex;
       flex-direction: column;
       align-items: center;
       flex: 1;
-      width: 304.82px;
-      margin: 0 44.435px;
-      
+      min-width: 304.82px;
+      width: 100%;
+      margin: 36px 44.435px 0;
+
       &:last-child {
         width: 359.4px;
       }
-      h5 {
-        font-size: 22px;
-        font-weight: 700;
-        margin-top: 11px;
+      img {
+        width: 67.03px;
       }
-      p {
-        text-align: center;
-        color: variables.$p-color;
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h5 {
+          font-size: 22px;
+          font-weight: 700;
+          margin-top: 11px;
+        }
+        p {
+          text-align: center;
+          color: variables.$p-color;
+          margin-top: 12px;
+        }
       }
     }
+  }
+  @media only screen and (max-width: variables.$medium-width) {
+    padding: 38px 35px 185.36px !important;
+    h2 {
+      font-size: 32px !important;
+      width: 100% !important;
+    }
+    .row {
+      flex-direction: column;
+      .column {
+        flex-direction: row !important;
+        margin: 36px 0 0 !important;
+       
+        div.text {
+          align-items: flex-start !important;
+          margin-left: 15.97px !important;
+          p {
+            text-align: left !important;
+          }
+        }
+      }
+    }
+   
   }
 }

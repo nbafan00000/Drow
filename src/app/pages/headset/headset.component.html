@@ -1,24 +1,18 @@
 <div id="headset">
   <h2>
-    Meet Our EEG<br/>Headset
+    Meet Our EEG Headset
   </h2>
   <img src="../../../assets/bitbrain.png" alt="Bitbrain img" id="bitbrain-img" />
   <p>Hover device to see how this works</p>
   <div class="row">
-    <div class="column">
-      <img src="../../../assets/head.svg" />
-      <h5>Wear Our Device</h5>
-      <p>Sit comfortable and wear our device and then press start brain training.</p>
-    </div>
-    <div class="column">
-      <img src="../../../assets/eye-closed.svg" />
-      <h5>Keep your eyes closed</h5>
-      <p>Listen session to calculate your sleep efficiency</p>
-    </div>
-    <div class="column">
-      <img src="../../../assets/efficiency.svg" />
-      <h5>Calculating Efficiency</h5>
-      <p>Our A.I. calculates your expected sleep wellness for tonight. With further training, this number will increase over time</p>
+    <div class="column" *ngFor="let description of descriptions">
+      <div>
+        <img src="{{description.image}}" />
+      </div>
+      <div class="text">
+        <h5>{{description.title}}</h5>
+        <p>{{description.description}}</p>
+      </div>
     </div>
   </div>
 </div>

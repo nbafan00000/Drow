@@ -33,13 +33,19 @@
         width: 124px;
         height: 124px;
         border-radius: 50%;
-        background-color: variables.$background-alternative-color;
-        align-items: center;
-        justify-content: center;
-        display: flex;
         position: relative;
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
         &.center {
           margin-top: 33px;
+        }
+        &.moon-star {
+          background-color: variables.$background-alternative-color;
+          align-items: center;
+          justify-content: center;
+          display: flex;
         }
       }
       .first {
@@ -78,7 +84,7 @@
         color: variables.$alternative-blue-color;
         font-weight: 700;
         font-size: 32px;
-        max-width: 383px;
+        width: 383px;
       }
       p {
         font-family: 'Work Sans', sans-serif;
@@ -87,7 +93,7 @@
         line-height: 34px;
         letter-spacing: 0.01em;
         font-size: 20px;
-        max-width: 507px;
+        width: 507px;
         color: variables.$p-color;
         margin-top: 20px;
       }
@@ -96,13 +102,28 @@
       }
     }
   }
+  @media only screen and (max-width: 1508px) {
+    .charts {
+      width: auto !important;
+    }
+  }
   @media only screen and (max-width: 1207px) {
-    #caret {
-      margin: 0 22px 0 0 !important;
+    .row {
+      justify-content: center !important;
+      #caret {
+        margin: 0 22px 0 0 !important;
+      }
+      .description {
+        margin-top: 86px;
+        width: 100%;
+        h4, p {
+          width: auto !important;
+        }
+      }
     }
   }
   @media only screen and (max-width: variables.$medium-width) {
-    padding: 140.17px 44px 0px 29px;
+    padding: 140.17px 44px 38px 29px;
     .row {
       h2 {
         font-size: 32px !important;
@@ -112,12 +133,40 @@
           margin-left: 0 !important;
         }
       }
-      .left {
+      .charts {
         width: auto !important;
       }
     }   
   }
-  @media only screen and (max-width: variables.$small-width) {
-   
+  @media only screen and (max-width: 710px) {
+    .row {
+      .circle {
+        width: 82px !important;
+        height: 82px !important;
+      }
+      .first {
+        margin-right: 14.11px !important;
+      }
+      .second {
+        margin-right: 37.53px !important;
+        .moon-star {
+          img {
+            width: 47.86px;
+            height: 47.86px;
+          }
+        }
+      }
+      .third {
+        .brain {
+          width: 174.23px !important;
+          height: 75.05px !important;
+          img {
+            width: 42.89px;
+            height: 42.89px;
+          }
+        }
+      }
+    }
+    
   }
 }
