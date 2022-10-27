@@ -8,10 +8,13 @@
   background-color: variables.$background-alternative-color;
   position: relative;
   overflow: hidden;
-
   h2 {
-    width: 704px;
+    max-width: 704px;
+    width: 100%;
     text-align: center;
+  }
+  img {
+    max-width: 100%;;
   }
   img#iphone-14 {
     margin-top: 72px;
@@ -23,5 +26,17 @@
   img#card2 {
     position: absolute;
     bottom: 0;
+  }
+  @media only screen and (max-width: variables.$medium-width) {
+    padding: 75px 158px !important;
+    h2 {
+      font-size: 32px!important;
+    }
+  }
+  @media only screen and (max-width: variables.$small-width) {
+    padding: 75px 58px !important;
+    h2 {
+      font-size: 26px!important;
+    }
   }
 }
