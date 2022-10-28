@@ -28,13 +28,13 @@
     bottom: 0;
   }
   @media only screen and (max-width: variables.$medium-width) {
-    padding: 75px 158px !important;
+    padding: 75px 18.5% !important;
     h2 {
       font-size: 32px!important;
     }
   }
   @media only screen and (max-width: variables.$small-width) {
-    padding: 75px 58px !important;
+    padding: 75px 13% !important;
     h2 {
       font-size: 26px!important;
     }

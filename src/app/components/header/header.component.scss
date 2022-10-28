@@ -31,7 +31,6 @@
     }
   }
   img#logo {
-    margin-right: 14%;
     width: 198px;
     &.top {
       font-size: 15px;
@@ -55,6 +54,11 @@
         width: 56px;
         height: 56px;
       }
+    }
+  }
+  @media only screen and (max-width: variables.$medium-width) {
+    #menu-items {
+      display: none;
     }
   }
 }

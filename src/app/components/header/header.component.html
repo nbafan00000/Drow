@@ -5,7 +5,7 @@
     id="logo"
     [ngClass]="isTop ? 'top' : ''"
   />
-  <span>
+  <span id="menu-items">
     <a aria-label="Brain Training" href="#{{menuItem.slug}}" *ngFor="let menuItem of menuItems" class="menu-item" [ngClass]="isTop ? 'top' : ''">
       {{menuItem.label}}
     </a>
