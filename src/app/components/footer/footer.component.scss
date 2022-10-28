@@ -57,4 +57,9 @@
       }
     }
   }
+  @media only screen and (max-width: variables.$medium-width) {
+    #sleep-companies {
+      display: none;
+    }
+  }
 }
