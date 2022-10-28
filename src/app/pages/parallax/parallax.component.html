@@ -14,7 +14,7 @@
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row" id="progress-data">
     <div class="box" id="track-progress">
       <img src="../../../assets/chart-2.svg" alt="Chart icon" />
       <h3>Track Your Progress</h3>
@@ -23,23 +23,28 @@
     </div>
     <div class="box" id="data-secured">
       <img src="../../../assets/shield.svg" alt="Shield icon" />
-      <h3>Your Data Is Secured</h3>
-      <p class="center lowercase">The data we gather is secured. anytime you can deactivate your account and we erase all the data in database.</p>
+      <div>
+        <h3>Your Data Is Secured</h3>
+        <p class="center lowercase">The data we gather is secured. anytime you can deactivate your account and we erase all the data in database.</p>
+      </div>
     </div>
   </div>
   <div class="testimonials">
     <h2 id="title">Here is what our customers say.</h2>
-    <div class="row">
-      <div class="box" *ngFor="let testimonial of testimonials">
-        <div class="header" *ngIf="testimonial.name">
-          <img src="../../../assets/anri.png" alt="Avatar" class="avatar" />
-          <h6 class="name">{{testimonial.name}}</h6>
-          <span class="date">{{testimonial.date}}</span>
-        </div>
-        <div *ngIf="testimonial.title" class="body">
-          <h6>{{testimonial.title}}</h6>
-          <p>“{{testimonial.description}}”</p>
-          <img src="../../../assets/stars.svg" *ngIf="testimonial.rating" class="ratings" />
+    <div class="row-wrapper">
+      <div class="row">
+
+        <div class="box" *ngFor="let testimonial of testimonials">
+          <div class="header" *ngIf="testimonial.name">
+            <img src="../../../assets/anri.png" alt="Avatar" class="avatar" />
+            <h6 class="name">{{testimonial.name}}</h6>
+            <span class="date">{{testimonial.date}}</span>
+          </div>
+          <div *ngIf="testimonial.title" class="body">
+            <h6>{{testimonial.title}}</h6>
+            <p>“{{testimonial.description}}”</p>
+            <img src="../../../assets/stars.svg" *ngIf="testimonial.rating" class="ratings" />
+          </div>
         </div>
       </div>
     </div>

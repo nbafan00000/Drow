@@ -256,4 +256,77 @@
       }
     }
   }
+
+  @media only screen and (max-width: 990px) {
+    #track-progress {
+      margin: 0 !important;
+    }
+    #data-secured {
+      margin: 18px 0 !important;
+      flex-direction: row !important;
+      padding: 47px 85px 45px 58px !important;
+      div {
+        margin-left: 57px !important;
+        h3 {
+          font-size: 26px !important;
+          text-align: start;
+          margin: 0 !important;
+        }
+        p {
+          font-size: 16px !important;
+          text-align: start;
+        }
+      }
+    }
+    .testimonials {
+      .row-wrapper {
+        overflow-x: auto;
+        width: 100%;
+        scrollbar-width: none;
+        .row {
+          display: flex;
+          float: left;
+          flex-wrap: nowrap;
+        }
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: variables.$medium-width) {
+    padding: 52px 29px !important;
+    #sleep-diary {
+      justify-content: center;
+      padding: 54px 96px !important;
+      .right {
+        padding: 0!important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2, p {
+          text-align: center;
+        }
+        h2 {
+          font-size: 32px !important;
+        }
+        p {
+          &.comment {
+            margin-top: 54px;
+          }
+        }
+      }
+    }
+    .testimonials {
+      h2 {
+        font-size: 32px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: variables.$small-width) {
+    padding: 37px 14px !important;
+    
+  }
+
 }
