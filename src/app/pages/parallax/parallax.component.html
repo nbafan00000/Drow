@@ -93,11 +93,13 @@
   </div>
   <div class="blog">
     <h2 id="title">Read Our Blog</h2>
-    <div class="row">
-      <div class="blog-box-wrapper" *ngFor="let blog of blogs">
-        <div class="box blog-box">
+    <div class="row-wrapper">
+      <div class="row">
+        <div class="blog-box-wrapper" *ngFor="let blog of blogs">
+          <div class="box blog-box">
+          </div>
+          <h5>Blog Title Goes here</h5>
         </div>
-        <h5>Blog Title Goes here</h5>
       </div>
     </div>
   </div>
@@ -106,7 +108,7 @@
     <div>
       <h1>Are you clinician?</h1>
       <p>We have solutions for clinics as well.</p>
-      <app-button label="Pre-order" type="secondary"></app-button>
+      <app-button label="Learn More" type="secondary"></app-button>
     </div>
   </div>
 </div> 

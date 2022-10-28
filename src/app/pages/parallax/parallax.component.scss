@@ -240,6 +240,7 @@
     border-radius: 14px;
     img {
       margin-right: 80px;
+      max-width: 100%;
     }
     div {
       display: flex;
@@ -253,6 +254,15 @@
       p {
         margin-top: 14px;
         flex: 1;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1245px) {
+    #for-clinicians {
+      padding: 42px 22px 23px 29px !important;
+      img {
+        margin-right: 10px;
       }
     }
   }
@@ -278,7 +288,7 @@
         }
       }
     }
-    .testimonials {
+    .testimonials, .blog {
       .row-wrapper {
         overflow-x: auto;
         width: 100%;
@@ -293,10 +303,26 @@
         }
       }
     }
+    .pre-order {
+      .left {
+        padding: 56px 31px !important;
+        .social-wrapper {
+          h4 {
+            display: none !important;
+          }
+        }
+      }
+    }
+    #for-clinicians {
+      justify-content: center;
+    }
   }
 
   @media only screen and (max-width: variables.$medium-width) {
     padding: 52px 29px !important;
+    h2 {
+      font-size: 32px !important;
+    }
     #sleep-diary {
       justify-content: center;
       padding: 54px 96px !important;
@@ -308,9 +334,6 @@
         h2, p {
           text-align: center;
         }
-        h2 {
-          font-size: 32px !important;
-        }
         p {
           &.comment {
             margin-top: 54px;
@@ -318,15 +341,37 @@
         }
       }
     }
-    .testimonials {
-      h2 {
-        font-size: 32px !important;
+    .faq {
+      .row {
+        flex-direction: column !important;
+        .faq-box {
+          margin: 0 0 21px !important;
+          flex: 1 !important;
+          width: auto !important;
+        }
+      }
+    }
+    .pre-order {
+      .right {
+        display: none !important;
+      }
+    }
+    #about-us {
+      p {
+        font-size: 16px !important;
+      }
+    }
+    .blog {
+      h5 {
+        font-size: 20px !important;
       }
     }
   }
   @media only screen and (max-width: variables.$small-width) {
-    padding: 37px 14px !important;
-    
+    .pre-order {
+      img {
+        margin: 0 !important;
+      }
+    }
   }
-
 }
