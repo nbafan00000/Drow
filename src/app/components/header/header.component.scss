@@ -16,6 +16,14 @@
   font-weight: 600;
   padding: 0 10px 0 14px;
   z-index: 1;
+  #mobile-menu {
+    display: flex;
+    align-items: center;
+    display: none;
+    img {
+      margin-right: 8px;
+    }
+  }
   &.top {
     background-color: transparent;
     border-bottom: 0px solid transparent;
@@ -57,8 +65,28 @@
     }
   }
   @media only screen and (max-width: variables.$medium-width) {
+    #mobile-menu {
+      display: flex;
+    }
+    #logo {
+      width: 184px !important;
+    }
     #menu-items {
       display: none;
+    }
+    .social-button {
+      width: 50px !important;
+      height: 50px !important;
+    }
+  }
+  @media only screen and (max-width: variables.$small-width) {
+    .social-button {
+      width: 46px !important;
+      height: 46px !important;
+      &.top {
+        width: 46px;
+        height: 46px;
+      }
     }
   }
 }
