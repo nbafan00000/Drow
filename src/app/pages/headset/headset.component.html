@@ -2,10 +2,12 @@
   <h2>
     Meet Our EEG Headset
   </h2>
-  <img src="../../../assets/bitbrain.png" alt="Bitbrain img" id="bitbrain-img" />
+  <img src="../../../assets/bitbrain.png" alt="Bitbrain img" id="bitbrain-img" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100"
+  data-aos-duration="1000" />
   <p>Hover device to see how this works</p>
   <div class="row">
-    <div class="column" *ngFor="let description of descriptions">
+    <div class="column" *ngFor="let description of descriptions; let i = index" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" [attr.data-aos-delay]="800 * i"
+    data-aos-duration="1000">
       <div>
         <img src="{{description.image}}" />
       </div>

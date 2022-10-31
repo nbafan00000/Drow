@@ -78,13 +78,15 @@
       </div>
     </div>
     <div class="right">
-      <img src="../../assets/pre-order-phone.png" />
+      <img src="../../assets/pre-order-phone.png" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100"
+      data-aos-duration="1000"/>
     </div>
   </div>
   <div id="about-us">
     <h2>Join Our Team</h2>
     <p class="lowercase">we are hiring</p>
-    <div class="position" *ngFor="let position of positions">
+    <div class="position" *ngFor="let position of positions; let i = index" data-aos="fade-up" [attr.data-aos-delay]="800 * i"
+    data-aos-duration="1000">
       <h5 class="title">{{position.title}}</h5>
       <h5 class="location">{{position.location}}</h5>
       <img src="../../../assets/chevron-right.svg" />
