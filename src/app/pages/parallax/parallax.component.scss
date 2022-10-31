@@ -18,11 +18,13 @@
     .left {
       color: white;
       flex: 1;
-      background-image: url(../../../assets/iPhone-12.png);
       padding-top: 63px;
-      background-repeat: no-repeat;
-      height: 593px;
-      min-width: 600px;
+      justify-content: flex-end;
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
     }
     .right {
       flex: 1;
