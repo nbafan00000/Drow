@@ -1,69 +1,24 @@
 <div id="sleep-efficiency">
-  <div class="wrapper" (scroll)="onWrapperScroll($event)">
-    <div class="row center-aligned">
-      <div class="left">
-        <h2>Calculate Sleep Efficiency</h2>
-      </div>
-      <div class="right">
-        <h2><img src="../assets/caret-double-right.svg" id="caret" />Drowzee</h2>
-      </div>
-    </div>
-    <div class="row top-spacing">
-      <div class="charts">
-        <div class="first">
-          <div class="circle">
-            <circle-progress
-              [percent]="85"
-              [outerStrokeGradient]="true"
-              [outerStrokeColor]="'#4C48F4'"
-              [innerStrokeColor]="'#1C2A71'"
-              [outerStrokeGradientStopColor]="'#9193FF'"
-              [titleColor]="'#ffffff'"
-              [animation]="true"
-              [animationDuration]="1000"
-              [responsive]="true"
-            >
-            </circle-progress>
-          </div>
+  <div class="scroll">
+    <div class="wrapper" (scroll)="onWrapperScroll($event)">
+      <div class="row center-aligned">
+        <div class="left">
+          <h2>Calculate Sleep Efficiency</h2>
         </div>
-        <div class="second">
-          <div class="circle">
-            <img src="../assets/face.svg" />
-          </div>
-          <div class="circle center moon-star">
-            <img src="../assets/moon-stars.svg" />
-          </div>
-          <div class="circle center">
-            <img src="../assets/face-2.svg" />
-          </div>
-          <div id="bottom-progress" class="circle">
-            <circle-progress
-              [percent]="71"
-              [outerStrokeGradient]="true"
-              [outerStrokeColor]="'#4C48F4'"
-              [innerStrokeColor]="'#1C2A71'"
-              [outerStrokeGradientStopColor]="'#9193FF'"
-              [titleColor]="'#ffffff'"
-              [animation]="true"
-              [animationDuration]="1000"
-              [responsive]="true"
-            >
-            </circle-progress>
-          </div>
+        <div class="right">
+          <h2><img src="../assets/caret-double-right.svg" id="caret" />Drowzee</h2>
         </div>
-        <div class="third">
-          <div class="brain">
-            <img src="../assets/brain.svg" />
-          </div>
-          <div class="row">
-            <div class="circle">
-              <img src="../assets/face-3.svg" />
-            </div>
+      </div>
+      <div class="row top-spacing">
+        <div class="charts">
+          <div class="first">
             <div class="circle">
               <circle-progress
-                [percent]="60"
-                [outerStrokeColor]="'#DB9A4E'"
+                [percent]="85"
+                [outerStrokeGradient]="true"
+                [outerStrokeColor]="'#4C48F4'"
                 [innerStrokeColor]="'#1C2A71'"
+                [outerStrokeGradientStopColor]="'#9193FF'"
                 [titleColor]="'#ffffff'"
                 [animation]="true"
                 [animationDuration]="1000"
@@ -72,17 +27,64 @@
               </circle-progress>
             </div>
           </div>
+          <div class="second">
+            <div class="circle">
+              <img src="../assets/face.svg" />
+            </div>
+            <div class="circle center moon-star">
+              <img src="../assets/moon-stars.svg" />
+            </div>
+            <div class="circle center">
+              <img src="../assets/face-2.svg" />
+            </div>
+            <div id="bottom-progress" class="circle">
+              <circle-progress
+                [percent]="71"
+                [outerStrokeGradient]="true"
+                [outerStrokeColor]="'#4C48F4'"
+                [innerStrokeColor]="'#1C2A71'"
+                [outerStrokeGradientStopColor]="'#9193FF'"
+                [titleColor]="'#ffffff'"
+                [animation]="true"
+                [animationDuration]="1000"
+                [responsive]="true"
+              >
+              </circle-progress>
+            </div>
+          </div>
+          <div class="third">
+            <div class="brain">
+              <img src="../assets/brain.svg" />
+            </div>
+            <div class="row">
+              <div class="circle">
+                <img src="../assets/face-3.svg" />
+              </div>
+              <div class="circle">
+                <circle-progress
+                  [percent]="60"
+                  [outerStrokeColor]="'#DB9A4E'"
+                  [innerStrokeColor]="'#1C2A71'"
+                  [titleColor]="'#ffffff'"
+                  [animation]="true"
+                  [animationDuration]="1000"
+                  [responsive]="true"
+                >
+                </circle-progress>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="description right">
-        <h4 class="title">
-          95% of users gain one hour of extra sleep
-        </h4>
-        <p>
-          Drowzee aim to create the first medical-grade EEG device for sleep improvement and software that runs on your mobile to provide personalized brain training that improves sleep efficiency in 95% of users, by speeding up time to sleep and strengthening sleep continuity.
-        </p>
-        <div class="button-wrapper">
-          <app-button label="Learn More" type="secondary"></app-button>
+        <div class="description right">
+          <h4 class="title">
+            95% of users gain one hour of extra sleep
+          </h4>
+          <p>
+            Drowzee aim to create the first medical-grade EEG device for sleep improvement and software that runs on your mobile to provide personalized brain training that improves sleep efficiency in 95% of users, by speeding up time to sleep and strengthening sleep continuity.
+          </p>
+          <div class="button-wrapper">
+            <app-button label="Learn More" type="secondary"></app-button>
+          </div>
         </div>
       </div>
     </div>

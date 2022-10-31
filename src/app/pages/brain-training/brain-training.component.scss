@@ -1,13 +1,17 @@
 @use "../../variables";
 
 #brain-training {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 75px 0 69px;
   background-color: variables.$background-alternative-color;
+  height: 600vh;
   position: relative;
-  overflow: hidden;
+  .wrapper {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 0 69px;
+    top: 75px;
+  }
   h2 {
     max-width: 704px;
     width: 100%;

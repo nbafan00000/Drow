@@ -7,10 +7,16 @@
   background-size: 100% 100%;
   display: flex;
   justify-content: center;
+  .scroll {
+    position: relative;
+    height: 600vh;
+  }
   .wrapper {
     display: flex;
     flex-direction: column;
-
+    position: sticky;
+    top: 112px;
+  
     .top-spacing {
       margin-top: 64px; 
     }
