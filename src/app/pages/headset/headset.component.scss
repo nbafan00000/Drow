@@ -65,7 +65,9 @@
       .column {
         flex-direction: row !important;
         margin: 36px 0 0 !important;
-       
+        &:last-child {
+          width: 100% !important;
+        }
         div.text {
           align-items: flex-start !important;
           margin-left: 15.97px !important;
