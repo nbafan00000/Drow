@@ -400,6 +400,17 @@
       }
     }
   }
+  @media only screen and (max-width: 600px) {
+    #data-secured {
+      margin: 18px 0 !important;
+      flex-direction: column !important;
+      padding: 24px 22px 15px 23px !important;
+      div {
+        margin: 26px 0 0 0 !important;
+      }
+    }
+  }
+
   @media only screen and (max-width: variables.$small-width) {
     .pre-order {
       img {
