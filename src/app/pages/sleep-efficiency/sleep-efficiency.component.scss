@@ -120,6 +120,14 @@
     }
   }
   @media only screen and (max-width: 1351px) {
+    h2 {
+      font-size: 32px !important;
+      #caret {
+        width: 64px !important;
+        height: 64px !important;
+        margin-left: 0 !important;
+      }
+    }
     .row {
       justify-content: center !important;
       #caret {
@@ -135,22 +143,21 @@
     }
   }
   @media only screen and (max-width: variables.$medium-width) {
-    padding: 140.17px 44px 38px 29px;
+    padding: 140.17px 44px 38px 29px !important;
     .row {
-      h2 {
-        font-size: 32px !important;
-        #caret {
-          width: 64px !important;
-          height: 64px !important;
-          margin-left: 0 !important;
-        }
-      }
       .charts {
         width: auto !important;
       }
     }   
   }
   @media only screen and (max-width: 710px) {
+    h2 {
+      font-size: 26px !important;
+      #caret {
+        width: 32px !important;
+        height: 32px !important;
+      }
+    }
     .row {
       .circle {
         width: 82px !important;
