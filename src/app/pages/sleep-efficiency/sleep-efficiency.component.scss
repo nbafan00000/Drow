@@ -7,7 +7,7 @@
   background-size: 100% 100%;
   display: flex;
   justify-content: center;
-  .scroll {
+  #sleep-efficiency-scroll {
     position: relative;
     height: 600vh;
   }
@@ -24,11 +24,42 @@
       align-items: center;
     }
     .row {
+      .center {
+        position: relative;
+        display: flex;
+      }
+
+      .mask {
+        background: variables.$primary-color;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        mix-blend-mode: multiply;
+        &#mask1 {
+          background: black;
+          mix-blend-mode: lighten;
+        }
+      }
+      
       h2 {
         align-items: center;
         display: flex;
         font-size: 48px;
         font-weight: 300;
+        color: white;
+        opacity: 0.9;
+
+        // &::before {
+        //   content: "";
+        //   display: block;
+        //   position: absolute;
+        //   top: 0;
+        //   right: 0;
+        //   bottom: 0;
+        //   left: 0;
+        //   background: variables.$primary-color;
+        // }
         #caret {
           width: 96px;
           height: 96px;
