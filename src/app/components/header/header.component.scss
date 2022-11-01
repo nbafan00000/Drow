@@ -80,6 +80,9 @@
     }
   }
   @media only screen and (max-width: variables.$small-width) {
+    #logo {
+      width: 142px !important;
+    }
     .social-button {
       width: 46px !important;
       height: 46px !important;
