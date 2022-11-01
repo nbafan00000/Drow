@@ -5,32 +5,49 @@
   height: 600vh;
   position: relative;
   .wrapper {
-    position: sticky;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 75px 0 69px;
+    position: sticky;
     top: 75px;
+    .iphone {
+      margin-top: 72px;
+      position: relative;
+      width: 602px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        position: absolute;
+      }
+      img#iphone-14 {
+        
+      }
+      img#card {
+        position: absolute;
+        bottom: 154.04px;
+        display: none;
+      }
+      img#card2 {
+        position: absolute;
+        bottom: 0;
+        display: none;
+      }
+      img#card3 {
+        display: none;
+      }
+    }
   }
   h2 {
     max-width: 704px;
     width: 100%;
     text-align: center;
   }
-  img {
-    max-width: 100%;;
-  }
-  img#iphone-14 {
-    margin-top: 72px;
-  }
-  img#card {
-    position: absolute;
-    bottom: 154.04px;
-  }
-  img#card2 {
-    position: absolute;
-    bottom: 0;
-  }
+  
+ 
+  
   @media only screen and (max-width: variables.$medium-width) {
     padding: 75px 18.5% !important;
     h2 {

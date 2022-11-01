@@ -8,7 +8,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 export class BrainTrainingComponent implements OnInit {
 
   constructor() { }
-  scrollHeight: number = 0;
+  iPhoneWidth: number = 100;
 
   ngOnInit(): void {
   }
@@ -17,7 +17,9 @@ export class BrainTrainingComponent implements OnInit {
   onScroll(event: any): void {
     const scrollTop = (event as Element).clientTop;
     const height = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop) - (document.getElementById('home') as Element).clientHeight - (document.getElementById('sleep-efficiency') as Element).clientHeight - (document.getElementById('headset') as Element).clientHeight - 112;
-    this.scrollHeight = Math.min(Math.max(height /  ((document.getElementById('brain-training') as Element).clientHeight * 5 / 6.0) * 100, 0), 100);
-    console.log('scrollheight---', this.scrollHeight);
+    const scrollHeight = Math.min(Math.max(height /  ((document.getElementById('brain-training') as Element).clientHeight * 5 / 6.0) * 100, 0), 100);
+
+    this.iPhoneWidth = 100 - scrollHeight * 0.51;
+    console.log('scrollheight---', this.iPhoneWidth);
   }
 }
