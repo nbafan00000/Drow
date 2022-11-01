@@ -4,15 +4,17 @@
   background-color: variables.$background-alternative-color;
   height: 600vh;
   position: relative;
+  padding: 75px 0 !important;
+
   .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 75px 0 69px;
+    padding: 0 0 69px;
     position: sticky;
-    top: 75px;
+    top: 150px;
     .iphone {
-      margin-top: 72px;
+      margin-top: 70px;
       position: relative;
       width: 602px;
       flex: 1;
@@ -22,21 +24,19 @@
       img {
         position: absolute;
       }
-      img#iphone-14 {
-        
-      }
       img#card {
         position: absolute;
-        bottom: 154.04px;
-        display: none;
+        top: 209px;
       }
       img#card2 {
         position: absolute;
-        bottom: 0;
-        display: none;
+        top: 594px;
+        width: 740px;
       }
       img#card3 {
-        display: none;
+        position: absolute;
+        top: 999.11px;
+        width: 800px;
       }
     }
   }
@@ -46,18 +46,18 @@
     text-align: center;
   }
   
- 
-  
   @media only screen and (max-width: variables.$medium-width) {
-    padding: 75px 18.5% !important;
+    padding: 75px 14.2% !important;
     h2 {
       font-size: 32px!important;
     }
   }
   @media only screen and (max-width: variables.$small-width) {
-    padding: 75px 13% !important;
+    padding: 43px 13% !important;
+    top: 43px !important;
     h2 {
-      font-size: 26px!important;
+      font-size: 26px !important;
+      line-height: 36px !important;
     }
   }
 }

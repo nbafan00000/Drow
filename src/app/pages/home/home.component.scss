@@ -49,6 +49,12 @@
     justify-content: center;
   }
   @media only screen and (max-width: variables.$medium-width) {
+    .left {
+      margin-top: 0 !important;
+      .button-wrapper {
+        margin: 21px 0 8.5px !important;
+      }
+    }
     h1 {
       font-size: 48px;
     }
