@@ -27,8 +27,8 @@
       .center {
         position: relative;
         display: flex;
+        flex-wrap: wrap;
       }
-
       .mask {
         background: variables.$primary-color;
         position: absolute;
@@ -49,17 +49,6 @@
         font-weight: 300;
         color: white;
         opacity: 0.9;
-
-        // &::before {
-        //   content: "";
-        //   display: block;
-        //   position: absolute;
-        //   top: 0;
-        //   right: 0;
-        //   bottom: 0;
-        //   left: 0;
-        //   background: variables.$primary-color;
-        // }
         #caret {
           width: 96px;
           height: 96px;
@@ -126,7 +115,7 @@
           color: variables.$alternative-blue-color;
           font-weight: 700;
           font-size: 32px;
-          width: 383px;
+          max-width: 383px;
         }
         p {
           font-family: 'Work Sans', sans-serif;
@@ -135,7 +124,7 @@
           line-height: 34px;
           letter-spacing: 0.01em;
           font-size: 20px;
-          width: 507px;
+          max-width: 507px;
           color: variables.$p-color;
           margin-top: 20px;
         }
@@ -174,7 +163,7 @@
     }
   }
   @media only screen and (max-width: variables.$medium-width) {
-    padding: 140.17px 44px 38px 29px !important;
+    padding: 103.36px 44px 38px 29px !important;
     .row {
       .charts {
         width: auto !important;
@@ -182,14 +171,31 @@
     }   
   }
   @media only screen and (max-width: 710px) {
+    padding: 49.82px 21px 38px !important;
     h2 {
       font-size: 26px !important;
+      line-height: 29px !important;
       #caret {
         width: 32px !important;
         height: 32px !important;
       }
     }
     .row {
+      .description {
+        margin-top: 49.82px !important;
+        h4.title {
+          font-size: 26px !important;
+          line-height: 28.99px !important;
+        }
+        p {
+          line-height: 28px !important;
+          font-size: 16px !important;
+          margin-top: 0px !important;
+        }
+        .button-wrapper {
+          display: none;
+        }
+      }
       .circle {
         width: 82px !important;
         height: 82px !important;
@@ -217,6 +223,15 @@
         }
       }
     }
-    
+  }
+  @media only screen and (max-width: variables.$small-width) {
+    .row {
+      .first {
+        margin-right: 7.11px !important;
+      }
+      .second {
+        margin-right: 17.53px !important;
+      }
+    }
   }
 }

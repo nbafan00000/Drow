@@ -166,7 +166,7 @@
 
   .pre-order {
     background: variables.$background-secondary-color url('../../../assets/pre-order-bg.png');
-    height: 320px;
+    max-height: 320px;
     border-radius: 14px;
     background-size: cover;
     margin-top: 76px;
@@ -378,6 +378,11 @@
       }
     }
     .pre-order {
+      .left {
+        .social-wrapper {
+          margin-left: 22px !important;
+        }
+      }
       .right {
         display: none !important;
       }
@@ -397,12 +402,13 @@
         align-items: flex-start;
         flex-direction: column;
         p {
-          margin-bottom: 14px;
+          margin-bottom: 14px !important;
         }
       }
     }
   }
   @media only screen and (max-width: 600px) {
+    padding: 37px 21px !important;
     #data-secured {
       margin: 18px 0 !important;
       flex-direction: column !important;
@@ -414,18 +420,29 @@
   }
 
   @media only screen and (max-width: variables.$small-width) {
+    p {
+      font-size: 16px !important;
+      line-height: 26px !important;
+    }
     #sleep-diary {
       padding: 22.56px 17.5px !important;
       h2 {
         font-size: 20px !important;
         line-height: 30px !important;
       }
-      p {
-        font-size: 16px !important;
-        line-height: 26px !important;
-      }
     }
     .pre-order {
+      .left {
+        padding: 22px 21px !important;
+        .button-wrapper {
+          margin: 16px 0 25px;
+        }
+        h3 {
+          font-size: 26px !important;
+          line-height: 40px !important;
+        }
+      }
+
       img {
         margin: 0 !important;
       }
