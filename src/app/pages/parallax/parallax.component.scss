@@ -290,8 +290,10 @@
 
   @media only screen and (max-width: 990px) {
     #sleep-diary {
-      justify-content: center;
+      flex-direction: column-reverse;
+      align-items: center;
       padding: 54px 96px 0!important;
+      flex-wrap: nowrap;
       .right {
         padding: 0!important;
         display: flex;
