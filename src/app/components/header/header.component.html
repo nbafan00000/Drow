@@ -1,4 +1,4 @@
-<div class="menu" role="banner" [ngClass]="isTop ? 'top' : ''">
+<div class="menu" role="banner" [ngClass]="isTop ? '' : 'top'">
   <a id="mobile-menu">
     <img src="../../../assets/list.svg" />
     Menu
@@ -7,18 +7,18 @@
     alt="Logo"
     src="../../assets/logo.svg"
     id="logo"
-    [ngClass]="isTop ? 'top' : ''"
+    [ngClass]="isTop ? '' : 'top'"
   />
   <span id="menu-items">
-    <a aria-label="Brain Training" href="#{{menuItem.slug}}" *ngFor="let menuItem of menuItems" class="menu-item" [ngClass]="isTop ? 'top' : ''">
+    <a aria-label="Brain Training" href="#{{menuItem.slug}}" *ngFor="let menuItem of menuItems" class="menu-item" [ngClass]="isTop ? '' : 'top'">
       {{menuItem.label}}
     </a>
   </span>
   <div class="social-wrapper">
-    <a href="https://play.google.com/store/apps/details?id=com.polydelic.drowzee" class="social-button" [ngClass]="isTop ? 'top' : ''">
+    <a href="https://play.google.com/store/apps/details?id=com.polydelic.drowzee" class="social-button" [ngClass]="isTop ? '' : 'top'">
       <img src="../../assets/google-play-logo.svg" />
     </a>
-    <a href="https://apps.apple.com/qa/app/drowzee/id1544281217" class="social-button" [ngClass]="isTop ? 'top' : ''">
+    <a href="https://apps.apple.com/qa/app/drowzee/id1544281217" class="social-button" [ngClass]="isTop ? '' : 'top'">
       <img src="../../assets/apple-logo.svg" />
     </a>
   </div>
