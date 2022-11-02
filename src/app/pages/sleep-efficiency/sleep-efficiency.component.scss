@@ -45,8 +45,6 @@
       h2 {
         align-items: center;
         display: flex;
-        font-size: 48px;
-        font-weight: 300;
         color: white;
         opacity: 0.9;
         #caret {
@@ -118,14 +116,8 @@
           max-width: 383px;
         }
         p {
-          font-family: 'Work Sans', sans-serif;
-          font-weight: 400;
           text-transform: lowercase;
-          line-height: 34px;
-          letter-spacing: 0.01em;
-          font-size: 20px;
           max-width: 507px;
-          color: variables.$p-color;
           margin-top: 20px;
         }
         .button-wrapper {
