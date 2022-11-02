@@ -5,9 +5,10 @@
   flex-direction: column;
   align-items: center;
   padding: 112px 154px 99.74px;
-  background-image: url(../../../assets/headset-bg.png);
+  background-image: url(../../../assets/headset-bg.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 
   h2 {
     text-align: center;

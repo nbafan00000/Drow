@@ -36,15 +36,6 @@ export class ParallaxComponent implements OnInit {
     }
   ];
 
-  blogs = [
-    {
-    },
-    {
-    },
-    {
-    }
-  ];
-
   positions = [
     {
       title: 'UI/UX Designer',
@@ -60,5 +51,4 @@ export class ParallaxComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

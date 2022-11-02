@@ -27,5 +27,4 @@ export class HeadsetComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
