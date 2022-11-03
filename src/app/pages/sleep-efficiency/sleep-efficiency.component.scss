@@ -28,32 +28,28 @@
       .center {
         position: relative;
         display: flex;
-        flex-wrap: wrap;
-      }
-      .mask {
-        background: variables.$primary-color;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        mix-blend-mode: multiply;
-        &#mask1 {
-          background: black;
-          mix-blend-mode: lighten;
+        flex-wrap: wrap;        
+        h2 {
+          align-items: center;
+          display: flex;
+          color: white;
+          background-repeat: no-repeat;
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          -moz-text-fill-color: transparent;
+          -moz-background-clip: text;
+          -o-text-fill-color: transparent;
+          -o-background-clip: text;
+          background-color: white;
+          background-image: url(../../../assets/text-bg.png);
+          #caret {
+            width: 96px;
+            height: 96px;
+            margin: 0 28px 0 20px;
+          }
         }
       }
       
-      h2 {
-        align-items: center;
-        display: flex;
-        color: white;
-        opacity: 0.9;
-        #caret {
-          width: 96px;
-          height: 96px;
-          margin: 0 28px 0 20px;
-        }
-      }
       .charts {
         display: flex;
         flex-direction: row;
@@ -150,7 +146,7 @@
         margin-top: 86px;
         width: 100%;
         h4, p {
-          width: auto !important;
+          max-width: 100% !important;
         }
       }
     }
