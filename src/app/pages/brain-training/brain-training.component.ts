@@ -21,7 +21,7 @@ export class BrainTrainingComponent implements OnInit {
   @HostListener('window:scroll', ['$event.target'])
   onScroll(event: any): void {
     const height = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop) - (document.getElementById('home') as Element).clientHeight - (document.getElementById('sleep-efficiency') as Element).clientHeight - (document.getElementById('headset') as Element).clientHeight - 112;
-    const scrollHeight = Math.min(Math.max(height /  ((document.getElementById('brain-training') as Element).clientHeight * 5 / 6.0) * 100, 0), 100);
+    const scrollHeight = Math.min(Math.max(height /  ((document.getElementById('brain-training') as Element).clientHeight * 2 / 3.0) * 100, 0), 100);
     this.iPhoneWidth = 100 - scrollHeight * 0.51;
     this.cardTop1 = 209 * (100 - scrollHeight * 0.61) / 100;
     this.cardWidth = 700 * (100 - scrollHeight * 0.643) / 100.0;
