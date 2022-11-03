@@ -16,6 +16,7 @@
   font-weight: 600;
   padding: 0 10px 0 14px;
   z-index: 1;
+  transition: width 1000ms linear, height 1000ms linear, font-size 1000ms linear, background-color 1000ms linear;
   #mobile-menu {
     display: flex;
     align-items: center;
@@ -28,6 +29,7 @@
     background-color: transparent;
     border-bottom: 0px solid transparent;
     backdrop-filter: unset;
+    transition: background-color 1000ms linear;
   }
   a.menu-item {
     text-decoration: none;
@@ -36,6 +38,7 @@
     font-size: 14px;
     &.top {
       font-size: 15px;
+      transition: font-size 1000ms ease-in;
     }
   }
   img#logo {
@@ -43,6 +46,7 @@
     &.top {
       font-size: 15px;
       width: 222px;
+      transition: width 1000ms ease-in;
     }
   }
   .social-wrapper {
@@ -61,6 +65,7 @@
       &.top {
         width: 56px;
         height: 56px;
+        transition: width 1000ms ease-in, height 1000ms ease-in;
       }
     }
   }
@@ -89,6 +94,7 @@
       &.top {
         width: 46px;
         height: 46px;
+        transition: width 1000ms ease-in, height 1000ms ease-in;
       }
     }
   }
