@@ -1,13 +1,8 @@
 <div class="content" role="main">
   <div class="page">
     <app-header></app-header>
-    <app-home></app-home>
-    <app-sleep-efficiency></app-sleep-efficiency>
-    <app-headset></app-headset>
-    <app-brain-training></app-brain-training>
-    <app-parallax></app-parallax>
-    <app-footer></app-footer>
+    <router-outlet>
+      <app-home-page></app-home-page>
+    </router-outlet>
   </div>
 </div>
-
-<router-outlet></router-outlet>

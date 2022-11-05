@@ -1,4 +1,4 @@
-@use "../../variables";
+@use "../../../variables";
 
 #sleep-efficiency {
   padding: 112px 144px 141px 79px;
@@ -35,6 +35,7 @@
           color: white;
           background-repeat: no-repeat;
           -webkit-text-fill-color: transparent;
+          background-clip: text;
           -webkit-background-clip: text;
           -moz-text-fill-color: transparent;
           -moz-background-clip: text;

@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ButtonComponent } from './components/button/button.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { HomeComponent } from './pages/home/home.component';
-import { SleepEfficiencyComponent } from './pages/sleep-efficiency/sleep-efficiency.component';
-import { HeadsetComponent } from './pages/headset/headset.component';
-import { BrainTrainingComponent } from './pages/brain-training/brain-training.component';
-import { ParallaxComponent } from './pages/parallax/parallax.component';
+import { HomeComponent } from './pages/home-page/home/home.component';
+import { SleepEfficiencyComponent } from './pages/home-page/sleep-efficiency/sleep-efficiency.component';
+import { HeadsetComponent } from './pages/home-page/headset/headset.component';
+import { BrainTrainingComponent } from './pages/home-page/brain-training/brain-training.component';
+import { ParallaxComponent } from './pages/home-page/parallax/parallax.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { ClinicianPageComponent } from './pages/clinician-page/clinician-page.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { FooterComponent } from './components/footer/footer.component';
     BrainTrainingComponent,
     ParallaxComponent,
     FooterComponent,
+    HomePageComponent,
+    ClinicianPageComponent,
   ],
   imports: [
     BrowserModule,
