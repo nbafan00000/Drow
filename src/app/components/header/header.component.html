@@ -10,7 +10,7 @@
     [ngClass]="isTop ? 'top' : 'bottom'"
   />
   <span id="menu-items">
-    <a aria-label="Brain Training" href="#{{menuItem.slug}}" *ngFor="let menuItem of menuItems" class="menu-item" [ngClass]="isTop ? 'top' : 'bottom'">
+    <a aria-label="Brain Training" href="/{{menuItem.link}}" *ngFor="let menuItem of menuItems" class="menu-item" [ngClass]="isTop ? 'top' : 'bottom'">
       {{menuItem.label}}
     </a>
   </span>

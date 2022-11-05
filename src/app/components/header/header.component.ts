@@ -24,7 +24,8 @@ export class HeaderComponent implements OnInit {
     },
     {
       label: 'For Clinicians',
-      slug: 'for-clinicians'
+      slug: 'for-clinicians',
+      link: 'clinicians',
     },
     {
       label: 'About Us',
