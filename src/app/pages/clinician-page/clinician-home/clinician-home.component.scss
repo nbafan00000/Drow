@@ -1,15 +1,15 @@
 @use "../../../variables";
 
-#home {
+#clinician-home {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 89px 2.72% 0 4.17%;
-  background: url(../../../../assets/home-bg.jpg);
+  background: url(../../../../assets/clinicians-bg.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  
+  min-height: 100vh;
   h1 {
     font-size: 78px;
     font-weight: 300;
@@ -30,24 +30,23 @@
     .button-wrapper {
       margin: 51px 0 97.79px;
     }
-    img#bitbrain-image {
-      width: 413.21px;
-      height: auto;
+  }
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    img#apple-set-image {
       position: relative;
+      width: auto;
       max-width: 100%;
-      @media (max-width: 834px) {
-        display: none;
-      }
+      height: auto;
     }
   }
-  img#iphone-image {
-    position: relative;
-    width: auto;
-    max-width: 100%;
-    height: auto;
-  }
-  @media only screen and (max-width: 1360px) {
-    justify-content: center;
+
+  @media only screen and (max-width: 1160px) {
+    flex-direction: column;
+    align-items: center;
   }
   @media only screen and (max-width: variables.$medium-width) {
     .left {

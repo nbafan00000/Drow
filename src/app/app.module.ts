@@ -14,6 +14,7 @@ import { ParallaxComponent } from './pages/home-page/parallax/parallax.component
 import { FooterComponent } from './components/footer/footer.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ClinicianPageComponent } from './pages/clinician-page/clinician-page.component';
+import { ClinicianHomeComponent } from './pages/clinician-page/clinician-home/clinician-home.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ClinicianPageComponent } from './pages/clinician-page/clinician-page.co
     FooterComponent,
     HomePageComponent,
     ClinicianPageComponent,
+    ClinicianHomeComponent,
   ],
   imports: [
     BrowserModule,
