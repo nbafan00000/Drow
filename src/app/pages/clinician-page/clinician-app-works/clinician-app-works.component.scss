@@ -62,6 +62,35 @@
         align-items: center;
       }
     }
+    &#send-notifications {
+      padding: 35.37px 5% 0;
+    }
+    &#exportable-reports {
+      padding: 56px 5% 58px;
+      img {
+        margin-bottom: 32px;
+      }
+    }
+    &#responsive-dashboard {
+      margin-top: 31px;
+      padding: 64px 5% 68.25px;
+      .devices {
+        padding-top: 48px;
+        display: flex;
+        justify-content: space-between;
+        img {
+          margin: 0 24px;
+        }
+      }
+    }
+    &#data-secured {
+      margin-top: 31px;
+      padding: 98px 5% 5%;
+      flex: 1;
+      img {
+        margin-bottom: 51px;
+      }
+    }
   }
   .row-logos {
     justify-content: space-between;
