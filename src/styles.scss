@@ -18,6 +18,9 @@ body::-webkit-scrollbar {
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
+  &.center {
+    text-align: center;
+  }
 }
 
 h2 {
@@ -51,9 +54,6 @@ p {
   color: variables.$p-color;
   letter-spacing: 0.01em;
  
-  &.center {
-    text-align: center;
-  }
   &.lowercase {
     text-transform: lowercase;
   }
@@ -87,4 +87,9 @@ a {
     flex: 1;
     position: relative;
   }
+}
+
+.box {
+  border-radius: 14px;
+  flex: 1;
 }

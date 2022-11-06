@@ -1,0 +1,83 @@
+<div id="clinician-app-works">
+  <h2 id="title">How our app works</h2>
+  
+  <div class="row app-works">
+    <div class="image">
+      <img src="../../../../assets/desktop-1.png" />
+    </div>
+    <div class="description right">
+      <h2 class="title">
+        Give your code to your patient.
+      </h2>
+      <p>
+        you will be linked to your patient
+      </p>
+    </div>
+  </div>
+  <div class="row app-works">
+    <div class="description left">
+      <h2 class="title">
+        Control their progress Sleep Diary and Brain Training.
+      </h2>
+      <p>
+        Check their progress and statuses
+      </p>
+    </div>
+    <div class="image">
+      <img src="../../../../assets/desktop-2.png" />
+    </div>
+  </div>
+  <div class="row brain-sleep-row">
+    <div class="box alternative brain-sleep row-spacing">
+      <div>
+        <img src="../../../assets/brain.svg" alt="Brain icon" />
+        <h3>Brain Training</h3>
+        <p class="lowercase">Our fabric-made electroencephalography (EEG) allows us to sense the electrical activity of thousands of neurons, which then feed to our algorithm and app.</p>
+      </div>
+      <img src="../../../assets/pre-order-phone.png" alt="iPhone 13 image" class="phone" />
+    </div>
+    <div class="box alternative brain-sleep row-spacing">
+      <div>
+        <img src="../../../assets/moon.svg" alt="Brain icon" />
+        <h3>Sleep Diary</h3>
+        <p class="lowercase">Self Monitoring and Insight by your sleep tracking devices...</p>
+      </div>
+      <img src="../../../assets/pre-order-phone-2.png" alt="iPhone 13 image" class="phone" />
+    </div>
+  </div>
+  <h2>Clinics already using our platform</h2>
+  <div class="row row-logos">
+    <img *ngFor="let logo of logos" src="../../../../assets/{{logo}}.svg" />
+  </div>
+  <div class="row" id="row-data">
+    <div class="row-data row-spacing">
+      <div class="box" id="send-notifications">
+        <img src="../../../assets/bell.svg" alt="Bell icon" />
+        <div>
+          <h3 class="center">Send Notifications</h3>
+          <p class="center lowercase">notify your users to stay active to improve their progrss.</p>
+        </div>
+        <img src="../../../assets/apple-set-2.png" alt="Apple set" />
+      </div>
+      <div class="box" id="send-notifications">
+        <div>
+          <h3 class="center">Responsive Dashboard</h3>
+          <p class="center lowercase">You can use the app on any device...</p>
+        </div>
+        <div class="row devices">
+          <img *ngFor="let device of devices" src="../../../../assets/{{device}}.svg" />
+        </div>
+      </div>
+    </div>
+    <div class="row-data row-spacing">
+      <div class="box" id="data-secured">
+        <img src="../../../assets/shield.svg" alt="Shield icon" />
+        <div>
+          <h3 class="center">Your Data Is Secured</h3>
+          <p class="center lowercase">The data we gather is secured. anytime you can deactivate your account and we erase all the data in database.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>

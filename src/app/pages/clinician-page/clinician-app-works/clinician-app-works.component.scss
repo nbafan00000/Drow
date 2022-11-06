@@ -1,0 +1,94 @@
+@use "../../../variables";
+
+#clinician-app-works {
+  padding: 101px 52px 72px 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../../../../assets/app-works-bg.png) variables.$background-color;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center 306px;
+
+  .app-works {
+    margin: 56px 0 56px;
+    flex-wrap: wrap;
+    .image, .description {
+      flex: 1;
+      img {
+        width: 100%;
+      }
+    }
+    .description {
+      .title {
+        color: variables.$alternative-blue-color;
+      }
+    }
+    .right {
+      .title {
+        margin: 111px 0 0 43px;
+      }
+      p {
+        margin: 16px 0 0 43px;
+      }
+    }
+    .left {
+      .title {
+        margin: 106px 8vh 0 0;
+      }
+      p {
+        margin: 16px 8vh 0 0;
+      }
+    }
+  }
+  .brain-sleep-row {
+    margin-bottom: 87px;
+  }
+  .box {
+    background-color: variables.$background-secondary-color;
+    flex: 1;
+    &.alternative{
+      background-color: variables.$background-alternative-color;
+    }
+    &.brain-sleep {
+      padding: 30px 20px 0 32px;
+      height: 612px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      .phone {
+        align-items: center;
+      }
+    }
+  }
+  .row-logos {
+    justify-content: space-between;
+    width: 100%;
+    padding: 64px 0 89px 0;
+    img:first-child {
+      margin-left: 31px;
+    }
+    img:last-child {
+      margin-right: 31px;
+    }
+  }
+  .row-data {
+    flex: 1;
+    .box {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .row-spacing {
+    margin: 0 18px;
+    &:first-child {
+      margin: 0 18px 0 0;
+    }
+    &:last-child {
+      margin: 0 0 0 18px;
+    }
+  }
+}

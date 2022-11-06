@@ -3,12 +3,11 @@
 #clinician-home {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 89px 2.72% 0 4.17%;
   background: url(../../../../assets/clinicians-bg.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   min-height: 100vh;
   h1 {
     font-size: 78px;
@@ -26,7 +25,7 @@
   }
   .left {
     max-width: 585px;
-    margin-top: 110.37px;
+    padding-top: 23.9vh;
     .button-wrapper {
       margin: 51px 0 97.79px;
     }
@@ -35,6 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    padding-top: 9.26vh;
     flex: 1;
     img#apple-set-image {
       position: relative;
