@@ -152,7 +152,8 @@
     overflow: hidden;
     img {
       margin-right: 80px;
-      max-width: 468px;
+      width: 468px;
+      max-width: 100%;
       margin-bottom: -54.96px;
     }
     .right {
@@ -165,8 +166,7 @@
         flex-direction: column;
         flex: 1;
         justify-content: space-between;
-        h1 {
-          font-size: 48px;
+        h2 {
           font-weight: 400;
           line-height: 60px;
           max-width: 384px;
