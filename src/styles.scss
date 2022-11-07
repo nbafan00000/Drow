@@ -101,6 +101,10 @@ button {
   border-width: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 @media only screen and (max-width: variables.$medium-width) {
   h1 {
     font-size: 48px !important;

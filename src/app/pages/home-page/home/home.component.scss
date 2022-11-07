@@ -34,7 +34,6 @@
       width: 413.21px;
       height: auto;
       position: relative;
-      max-width: 100%;
       @media (max-width: 834px) {
         display: none;
       }
@@ -43,7 +42,6 @@
   img#iphone-image {
     position: relative;
     width: auto;
-    max-width: 100%;
     height: auto;
   }
   @media only screen and (max-width: 1360px) {
