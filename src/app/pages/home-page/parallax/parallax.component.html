@@ -28,37 +28,7 @@
       </div>
     </div>
   </div>
-  <div class="testimonials">
-    <h2 id="title">Here is what our customers say.</h2>
-    <div class="row-wrapper">
-      <div class="row">
-
-        <div class="box" *ngFor="let testimonial of testimonials">
-          <div class="header" *ngIf="testimonial.name">
-            <img src="../../../assets/anri.png" alt="Avatar" class="avatar" />
-            <h6 class="name">{{testimonial.name}}</h6>
-            <span class="date">{{testimonial.date}}</span>
-          </div>
-          <div *ngIf="testimonial.title" class="body">
-            <h6>{{testimonial.title}}</h6>
-            <p>“{{testimonial.description}}”</p>
-            <img src="../../../assets/stars.svg" *ngIf="testimonial.rating" class="ratings" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="faq">
-    <h2 id="title">Frequently Asked Questions</h2>
-    <div class="row">
-      <div class="box faq-box" *ngFor="let faq of faqs">
-        <div class="body">
-          <h5>{{faq.question}}</h5>
-          <p>{{faq.answer}}</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <app-testimonials></app-testimonials>
   <div class="pre-order">
     <div class="left">
       <h3>Try Drowzee now</h3>

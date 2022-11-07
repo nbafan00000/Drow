@@ -45,12 +45,12 @@
       <img src="../../../assets/pre-order-phone-2.png" alt="iPhone 13 image" class="phone" />
     </div>
   </div>
-  <h2>Clinics already using our platform</h2>
+  <h2 class="center">Clinics already using our platform</h2>
   <div class="row row-logos">
     <img *ngFor="let logo of logos" src="../../../../assets/{{logo}}.svg" />
   </div>
   <div class="row" id="row-data">
-    <div class="row-data row-spacing">
+    <div class="column-data row-spacing">
       <div class="box" id="send-notifications">
         <img src="../../../assets/bell.svg" alt="Bell icon" />
         <div>
@@ -69,7 +69,7 @@
         </div>
       </div>
     </div>
-    <div class="row-data row-spacing">
+    <div class="column-data row-spacing">
       <div class="box" id="exportable-reports">
         <img src="../../../assets/file-pdf.svg" alt="Pdf icon" />
         <div>
@@ -84,6 +84,17 @@
           <p class="center lowercase">The data we gather is secured. anytime you can deactivate your account and we erase all the data in database.</p>
         </div>
       </div>
+    </div>
+  </div>
+  <app-testimonials></app-testimonials>
+  <div id="interested-form">
+    <img src="../../../assets/iPhone-14-pro.png" alt="iPhone 14 pro" />
+    <div class="right">
+      <div>
+        <h1>The Future Of Brain Training</h1>
+        <p>Improve life quality with better sleep.</p>
+      </div>
+      <app-button label="Learn More" type="secondary"></app-button>
     </div>
   </div>
 </div>
