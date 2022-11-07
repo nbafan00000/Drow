@@ -17,6 +17,7 @@ import { ClinicianPageComponent } from './pages/clinician-page/clinician-page.co
 import { ClinicianHomeComponent } from './pages/clinician-page/clinician-home/clinician-home.component';
 import { ClinicianAppWorksComponent } from './pages/clinician-page/clinician-app-works/clinician-app-works.component';
 import { TestimonialsComponent } from './pages/home-page/testimonials/testimonials.component';
+import { InterestButtonsComponent } from './pages/clinician-page/clinician-app-works/interest-buttons/interest-buttons.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { TestimonialsComponent } from './pages/home-page/testimonials/testimonia
     ClinicianHomeComponent,
     ClinicianAppWorksComponent,
     TestimonialsComponent,
+    InterestButtonsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,6 @@
+<div>
+  <button *ngFor="let button of formButtons" (click)="onSelect(button.id)" [ngClass]="selected === button.id ? 'selected' : ''">
+    <span>{{button.label}}</span>
+    <img src="../../../../assets/{{button.icon}}.svg" *ngIf="button.icon" />
+</button>
+</div>

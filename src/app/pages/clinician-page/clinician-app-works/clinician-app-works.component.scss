@@ -134,32 +134,11 @@
     padding: 53px 5% 50px;
     margin-top: 36px;
     .form-row {
-      width: 100%;
-      max-width: 1070px;
       margin: 42px 0;
-      button {
-        flex: 1;
-        border-radius: 10px;
-        padding: 30px 18px;
-        background-color: variables.$background-alternative-color;
-        margin: 0 6.5px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        position: relative;
-        overflow: hidden;
-        img {
-          position: absolute;
-          bottom: -15px;
-          right: 23px;
-          opacity: .2;
-        }
-        &.selected {
-          background-color: variables.$alternative-color;
-        }
-      }
+      display: flex;
+      flex-direction: column;
+      width: 100%;
     }
-    
   }
   #future-training {
     padding: 29px 0 0 0;

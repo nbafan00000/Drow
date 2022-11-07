@@ -11,7 +11,7 @@ export class ButtonComponent implements OnInit {
   hover: boolean = false;
   @Input() disabled: boolean = false;
   @Input() full: boolean = false;
-  @Output() click = new EventEmitter<null>();;
+  @Output() click = new EventEmitter<null>();
 
   colors: { [key: string]: any } = {
     'primary': {

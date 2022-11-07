@@ -91,10 +91,7 @@
     <h2>Are you interested?</h2>
     <p>Choose service that you want to enroll</p>
     <div class="row form-row">
-      <button *ngFor="let button of formButtons" (click)="onSelect(button.id)" [ngClass]="selected === button.id ? 'selected' : ''">
-        <span>{{button.label}}</span>
-        <img src="../../../../assets/{{button.icon}}.svg" *ngIf="button.icon" />
-      </button>
+      <app-interest-buttons [selected]="selected" (select)="onSelect($event)"></app-interest-buttons>
     </div>
     <app-button label="Get Started" (click)="onOpenModal()"></app-button>
   </div>
