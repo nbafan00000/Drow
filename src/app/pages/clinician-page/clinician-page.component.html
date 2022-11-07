@@ -1,5 +1,13 @@
 <app-clinician-home></app-clinician-home>
 <app-clinician-app-works (openModal)="openModal($event)"></app-clinician-app-works>
 <div class="modal" [ngClass]="isModalOpen ? 'isVisible' : ''">
-
+  <div class="modal-content">
+    <h5>Get Started</h5>
+    <p>Choose Service you want to be enrolled</p>
+    <input *ngFor="let field of fields" type="text" placeholder="{{field.label}}"/>
+    <app-button label="Continue"></app-button>
+    <button id="close-button" (click)="onClose()">
+      <img src="../../../assets/close.svg" />
+    </button>
+  </div>
 </div>
