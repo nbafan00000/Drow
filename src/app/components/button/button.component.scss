@@ -14,4 +14,7 @@ button {
   &:active {
     border-style: outset;
   }
+  &.full-width {
+    width: 100%;
+  }
 }
