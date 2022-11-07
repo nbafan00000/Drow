@@ -87,7 +87,18 @@
     </div>
   </div>
   <app-testimonials></app-testimonials>
-  <div id="interested-form">
+  <div id="interested-form" class="box">
+    <h2>Are you interested?</h2>
+    <p>Choose service that you want to enroll</p>
+    <div class="row form-row">
+      <button *ngFor="let button of formButtons" (click)="onSelect(button.id)" [ngClass]="selected === button.id ? 'selected' : ''">
+        <span>{{button.label}}</span>
+        <img src="../../../../assets/{{button.icon}}.svg" *ngIf="button.icon" />
+      </button>
+    </div>
+    <app-button label="Get Started"></app-button>
+  </div>
+  <div id="future-training">
     <img src="../../../assets/iPhone-14-pro.png" alt="iPhone 14 pro" />
     <div class="right">
       <div>

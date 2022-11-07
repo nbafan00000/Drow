@@ -7,8 +7,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+body, button {
   font-family: Comfortaa;
+  color: variables.$white-color;
   margin: 0;
 }
 
@@ -92,4 +93,10 @@ a {
 .box {
   border-radius: 14px;
   flex: 1;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  border-width: 0;
 }

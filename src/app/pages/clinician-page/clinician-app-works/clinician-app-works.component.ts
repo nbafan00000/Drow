@@ -20,9 +20,32 @@ export class ClinicianAppWorksComponent implements OnInit {
     'desktop',
   ];
 
+  formButtons = [
+    {
+      id: 1,
+      label: 'EEG Training',
+      icon: 'brain',
+    },
+    {
+      id: 2,
+      label: 'Sleep Diary',
+      icon: 'moon',
+    },
+    {
+      id: 3,
+      label: 'Both',
+    }
+  ];
+
+  selected = 0;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSelect(id: number) {
+    this.selected = id;
   }
 
 }
