@@ -16,6 +16,12 @@ div {
     justify-content: flex-start;
     position: relative;
     overflow: hidden;
+    &:first-child {
+      margin: 0 6.5px 0 0;
+    }
+    &:last-child {
+      margin: 0 0px 0 6.5px;
+    }
     img {
       position: absolute;
       bottom: -15px;

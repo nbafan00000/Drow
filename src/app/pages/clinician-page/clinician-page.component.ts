@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./clinician-page.component.scss']
 })
 export class ClinicianPageComponent implements OnInit {
+  selected = 0;
   fields = [
     {
       id: 'full-name',
@@ -36,7 +37,12 @@ export class ClinicianPageComponent implements OnInit {
   ngOnInit(): void {
   }
   
+  onSelect($event: number) {
+    this.selected = $event;
+  }
+  
   openModal($event: number) {
+    this.selected = $event;
     this.isModalOpen = true;
   }
 

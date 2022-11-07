@@ -4,6 +4,9 @@
   <div class="modal-content">
     <h5 class="center">Get Started</h5>
     <p class="center">Choose Service you want to be enrolled</p>
+    <div class="row form-row">
+      <app-interest-buttons [selected]="selected" (select)="onSelect($event)"></app-interest-buttons>
+    </div>
     <input *ngFor="let field of fields" type="text" placeholder="{{field.label}}"/>
     <app-button label="Continue" [full]="true" (click)="onClose()"></app-button>
     <button id="close-button" (click)="onClose()">
