@@ -10,6 +10,7 @@ export class ButtonComponent implements OnInit {
   @Input() label: string = '';
   hover: boolean = false;
   @Input() disabled: boolean = false;
+  @Input() click: Function = () => {};
 
   colors: { [key: string]: any } = {
     'primary': {

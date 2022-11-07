@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-clinician-app-works',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./clinician-app-works.component.scss']
 })
 export class ClinicianAppWorksComponent implements OnInit {
+  @Input() openModal: Function = () => {};
   logos = [
     'logo-tuple',
     'logo-mirage',

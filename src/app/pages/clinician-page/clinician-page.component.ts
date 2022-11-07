@@ -8,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class ClinicianPageComponent implements OnInit {
 
   constructor() { }
+  isModalOpen: boolean = false;
 
   ngOnInit(): void {
   }
-
+  
+  openModal(id: number) {
+    this.isModalOpen = true;
+    console.log('openmodal', this.isModalOpen);
+  }
 }

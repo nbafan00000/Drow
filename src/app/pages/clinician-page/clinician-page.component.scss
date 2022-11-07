@@ -1,0 +1,13 @@
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #010517;
+  opacity: 0.7;
+  display: none;
+  &.isVisible {
+    display: block !important;
+  }
+}
