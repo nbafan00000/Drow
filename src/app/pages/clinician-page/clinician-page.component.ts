@@ -13,8 +13,7 @@ export class ClinicianPageComponent implements OnInit {
   ngOnInit(): void {
   }
   
-  openModal(id: number) {
+  openModal($event: number) {
     this.isModalOpen = true;
-    console.log('openmodal', this.isModalOpen);
   }
 }

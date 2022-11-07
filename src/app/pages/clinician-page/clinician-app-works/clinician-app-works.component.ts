@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-clinician-app-works',
@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./clinician-app-works.component.scss']
 })
 export class ClinicianAppWorksComponent implements OnInit {
-  @Input() openModal: Function = () => {};
+  @Output() openModal = new EventEmitter<number>();
   logos = [
     'logo-tuple',
     'logo-mirage',
@@ -47,6 +47,10 @@ export class ClinicianAppWorksComponent implements OnInit {
 
   onSelect(id: number) {
     this.selected = id;
+  }
+
+  onOpenModal() {
+    this.openModal.emit(this.selected);
   }
 
 }
