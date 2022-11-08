@@ -18,6 +18,8 @@ import { ClinicianHomeComponent } from './pages/clinician-page/clinician-home/cl
 import { ClinicianAppWorksComponent } from './pages/clinician-page/clinician-app-works/clinician-app-works.component';
 import { TestimonialsComponent } from './pages/home-page/testimonials/testimonials.component';
 import { InterestButtonsComponent } from './pages/clinician-page/clinician-app-works/interest-buttons/interest-buttons.component';
+import { EegPageComponent } from './pages/eeg-page/eeg-page.component';
+import { EegHomeComponent } from './pages/eeg-page/eeg-home/eeg-home.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { InterestButtonsComponent } from './pages/clinician-page/clinician-app-w
     ClinicianAppWorksComponent,
     TestimonialsComponent,
     InterestButtonsComponent,
+    EegPageComponent,
+    EegHomeComponent,
   ],
   imports: [
     BrowserModule,

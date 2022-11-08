@@ -1,15 +1,15 @@
 @use "../../../variables";
 
-#clinician-home {
+#eeg-home {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 89px 2.72% 0 4.17%;
-  background: url(../../../../assets/clinicians-bg.jpg);
+  background: url(../../../../assets/home-bg.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-
+  background-size: 100%;
+  
   h3 {
     font-size: 28px;
     font-weight: 400;
@@ -21,27 +21,34 @@
   }
   .left {
     max-width: 585px;
-    padding-top: 23.9vh;
+    margin-top: 110.37px;
     .button-wrapper {
       margin: 51px 0 97.79px;
+      display: flex;
+      align-items: center;
+      p {
+        width: 149px;
+        margin-left: 15px;
+        text-align: center;
+      }
     }
   }
   .right {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 9.26vh;
-    flex: 1;
-    img#apple-set-image {
+    flex-direction: column;
+    img {
       position: relative;
       width: auto;
       height: auto;
+      margin-bottom: 21px;
+    }
+    .row {
+      justify-content: space-between;
     }
   }
 
-  @media only screen and (max-width: 1160px) {
-    flex-direction: column;
-    align-items: center;
+  @media only screen and (max-width: 1360px) {
+    justify-content: center;
   }
   @media only screen and (max-width: variables.$medium-width) {
     .left {
