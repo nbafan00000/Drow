@@ -25,6 +25,7 @@
       align-items: center;
     }
     .row {
+      flex-wrap: wrap;
       .center {
         position: relative;
         display: flex;

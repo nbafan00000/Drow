@@ -116,6 +116,9 @@
       }
     }
   }
+  #clinicians-wrapper {
+    margin-top: 141px;
+  }
   
   @media only screen and (max-width: 990px) {
     #sleep-diary {
@@ -177,6 +180,9 @@
         }
       }
     }
+    #clinicians-wrapper {
+      margin-top: 84px;
+    }
   }
 
   @media only screen and (max-width: variables.$medium-width) {
@@ -194,7 +200,6 @@
         }
       }
     }
-    
     #about-us {
       p {
         font-size: 16px !important;
@@ -204,6 +209,9 @@
       h5 {
         font-size: 20px !important;
       }
+    }
+    #clinicians-wrapper {
+      margin-top: 49px;
     }
   }
   @media only screen and (max-width: 600px) {

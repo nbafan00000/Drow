@@ -1,0 +1,20 @@
+@use "../../variables";
+
+.container {
+  padding: 0 56px;
+  #eeg-clinicians-wrapper {
+    margin: 74px 0 57.93px;
+  }
+  @media only screen and (max-width: variables.$medium-width) {
+    padding: 0 29px !important;
+    #eeg-clinicians-wrapper {
+      margin: 39px 0 54.33px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 0 21px !important;
+    #eeg-clinicians-wrapper {
+      margin: 28px 0 37px;
+    }
+  }
+}
