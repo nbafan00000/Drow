@@ -21,6 +21,8 @@ import { InterestButtonsComponent } from './pages/clinician-page/clinician-app-w
 import { EegPageComponent } from './pages/eeg-page/eeg-page.component';
 import { EegHomeComponent } from './pages/eeg-page/eeg-home/eeg-home.component';
 import { EegContentComponent } from './pages/eeg-page/eeg-content/eeg-content.component';
+import { ForCliniciansComponent } from './pages/home-page/for-clinicians/for-clinicians.component';
+import { PreOrderComponent } from './pages/home-page/pre-order/pre-order.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { EegContentComponent } from './pages/eeg-page/eeg-content/eeg-content.co
     EegPageComponent,
     EegHomeComponent,
     EegContentComponent,
+    ForCliniciansComponent,
+    PreOrderComponent,
   ],
   imports: [
     BrowserModule,

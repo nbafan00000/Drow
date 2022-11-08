@@ -92,51 +92,6 @@
     }
   }
   
-  .pre-order {
-    background: variables.$background-secondary-color url('../../../../assets/pre-order-bg.png');
-    max-height: 320px;
-    border-radius: 14px;
-    background-size: cover;
-    margin-top: 76px;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    .left {
-      padding: 57px 0 65px 56px;
-      .button-wrapper {
-        margin: 51px 0 97.79px;
-        display: flex;
-        flex-direction: row;
-        .social-wrapper {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          margin-left: 33px;
-          h4 {
-            margin-right: 32px;
-          }
-          .social-button {
-            background-color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 12px;
-            width: 56px;
-            height: 56px;
-          }
-        }
-      }
-    }
-    .right {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex: 1;
-      justify-content: flex-end;
-
-    }
-  }
   #about-us {
     margin-top: 108px;
     p {
@@ -161,61 +116,7 @@
       }
     }
   }
-  #for-clinicians {
-    padding: 48px 45px 44px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 141px;
-    background: variables.$background-alternative-color;
-    border-radius: 14px;
-    justify-content: center;
-    img {
-      margin-right: 80px;
-    }
-    .right {
-      display: flex;
-      flex-direction: column;
-      padding: 40px 0 38px;
-
-      h1 {
-        font-weight: 400;
-        line-height: 60px;
-      }
-      div {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        justify-content: space-between;
-        p {
-          flex: 1;
-        }
-      }
-      
-    }
-  }
-
-  @media only screen and (max-width: 1245px) {
-    #for-clinicians {
-      flex-direction: column;
-      align-items: center;
-      padding: 42px 22px 23px 29px !important;
-      img {
-        margin-right: 10px;
-      }
-      .right {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        div {
-          flex: 1;
-        }
-      }
-    }
-  }
-
+  
   @media only screen and (max-width: 990px) {
     #sleep-diary {
       flex-direction: column-reverse;
@@ -276,19 +177,6 @@
         }
       }
     }
-    .pre-order {
-      .left {
-        padding: 56px 31px !important;
-        .social-wrapper {
-          h4 {
-            display: none !important;
-          }
-        }
-      }
-    }
-    #for-clinicians {
-      justify-content: center;
-    }
   }
 
   @media only screen and (max-width: variables.$medium-width) {
@@ -306,16 +194,7 @@
         }
       }
     }
-    .pre-order {
-      .left {
-        .social-wrapper {
-          margin-left: 22px !important;
-        }
-      }
-      .right {
-        display: none !important;
-      }
-    }
+    
     #about-us {
       p {
         font-size: 16px !important;
@@ -324,15 +203,6 @@
     .blog {
       h5 {
         font-size: 20px !important;
-      }
-    }
-    #for-clinicians {
-      .right {
-        align-items: flex-start;
-        flex-direction: column;
-        p {
-          margin-bottom: 14px !important;
-        }
       }
     }
   }
@@ -359,22 +229,6 @@
       h2 {
         font-size: 20px !important;
         line-height: 30px !important;
-      }
-    }
-    .pre-order {
-      .left {
-        padding: 22px 21px !important;
-        .button-wrapper {
-          margin: 16px 0 25px;
-        }
-        h3 {
-          font-size: 26px !important;
-          line-height: 40px !important;
-        }
-      }
-
-      img {
-        margin: 0 !important;
       }
     }
   }
