@@ -58,6 +58,11 @@
     h2 {
       width: 100% !important;
     }
+    p#description {
+      font-size: 22px;
+      line-height: 36px;
+      margin-top: 72px;
+    }
     .row {
       flex-direction: column;
       .column {
@@ -77,6 +82,12 @@
   }
   @media only screen and (max-width: variables.$small-width) {
     padding: 84px 21px 60px !important;
+    p#description {
+      font-size: 16px;
+      line-height: 28px;
+      margin-top: 60px;
+      text-align: left !important;
+    }
     .row {
       .column {
         .circle {
@@ -86,7 +97,6 @@
         p {
           margin-left: 8px !important;
           text-align: left !important;
-
         }
       }
     }
