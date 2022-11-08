@@ -20,6 +20,7 @@ import { TestimonialsComponent } from './pages/home-page/testimonials/testimonia
 import { InterestButtonsComponent } from './pages/clinician-page/clinician-app-works/interest-buttons/interest-buttons.component';
 import { EegPageComponent } from './pages/eeg-page/eeg-page.component';
 import { EegHomeComponent } from './pages/eeg-page/eeg-home/eeg-home.component';
+import { EegContentComponent } from './pages/eeg-page/eeg-content/eeg-content.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { EegHomeComponent } from './pages/eeg-page/eeg-home/eeg-home.component';
     InterestButtonsComponent,
     EegPageComponent,
     EegHomeComponent,
+    EegContentComponent,
   ],
   imports: [
     BrowserModule,

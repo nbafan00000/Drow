@@ -1,0 +1,19 @@
+<div id="eeg-content">
+  <img src="../../../../assets/bitbrain.png" alt="Bitbrain img" id="bitbrain-img" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100"
+  data-aos-duration="1000" />
+  <p id="tooltip">Hover device to see how this works</p>
+  <p class="center" id="description">The EGG headset and Pendulum App is a combination of products that will not only help you in sleeping better, but will also increase your productivity with closed loop brain training.
+    <br />
+    Our EEG headset is comfortable to wear and can be used at work or at home. All you need is 20 mins to relax and based on your sessions we will provide you data-driven personalised sleep schedules. 
+  </p>
+  <div class="row">
+    <div class="column" *ngFor="let description of descriptions; let i = index" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" [attr.data-aos-delay]="400 * i"
+    data-aos-duration="700">
+      <div class="circle">
+        <img src="{{description.image}}" />
+      </div>
+      <p class="center">{{description.title}}</p>
+    </div>
+  </div>
+</div>
+  

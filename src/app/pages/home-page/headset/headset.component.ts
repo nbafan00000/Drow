@@ -22,7 +22,8 @@ export class HeadsetComponent implements OnInit {
       title: 'Calculating Efficiency',
       description: 'Our A.I. calculates your expected sleep wellness for tonight. With further training, this number will increase over time'
     }
-  ]
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
