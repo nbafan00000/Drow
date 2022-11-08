@@ -20,7 +20,7 @@
     margin-top: 16px;
   }
   .left {
-    max-width: 585px;
+    max-width: 595px;
     margin-top: 110.37px;
     .button-wrapper {
       margin: 51px 0 97.79px;
@@ -30,6 +30,30 @@
         width: 149px;
         margin-left: 15px;
         text-align: center;
+      }
+    }
+    .set {
+      height: 70px;
+      margin-bottom: 65px;
+    }
+    .specs {
+      .icons {
+        display: flex;
+        flex-direction: column;
+        .row {
+          align-items: flex-start;
+          p {
+            margin-left: 8px;
+            font-size: 24px;
+            color: variables.$alternative-blue-color;
+          }
+        }
+      }
+    }
+    .sizes {
+      margin-left: 40px;
+      .set {
+        margin-top: 10px;
       }
     }
   }
