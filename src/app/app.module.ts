@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { SwiperModule } from 'swiper/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,7 @@ import { EegHomeComponent } from './pages/eeg-page/eeg-home/eeg-home.component';
 import { EegContentComponent } from './pages/eeg-page/eeg-content/eeg-content.component';
 import { ForCliniciansComponent } from './pages/home-page/for-clinicians/for-clinicians.component';
 import { PreOrderComponent } from './pages/home-page/pre-order/pre-order.component';
+import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +48,7 @@ import { PreOrderComponent } from './pages/home-page/pre-order/pre-order.compone
     EegContentComponent,
     ForCliniciansComponent,
     PreOrderComponent,
+    BlogPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -68,7 +71,8 @@ import { PreOrderComponent } from './pages/home-page/pre-order/pre-order.compone
       "unitsColor": "#ffffff",
       "titleFontSize": "28",
       "unitsFontSize": "28",
-    })
+    }),
+    SwiperModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

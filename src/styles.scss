@@ -3,6 +3,11 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700");
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;1,300&display=swap');
 
+
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
 html {
   scroll-behavior: smooth;
 }
