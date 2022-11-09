@@ -20,7 +20,7 @@
   <div id="about-roadmap">
     <h2>Product Roadmap</h2>
     <p id="big-plans">We have big plans</p>
-    <div class="row">
+    <div class="roadmap row">
       <div class="lines">
         <div class="dot"></div>
         <div class="line"></div>
@@ -31,13 +31,13 @@
             <h5>Drowzee has Launched Mobile App</h5>
             <p>30 Oct, 2022</p>
           </div>
-          <p>
+          <p class="roadmap-description">
             The EGG headset and Pendulum App is a combination of products that will not only help you in sleeping better, but will also increase your productivity with closed loop brain training. Our EEG headset is comfortable to wear and can be used at work or at home. All you need is 20 mins to relax and based on your sessions we will provide you data-driven personalised sleep schedules.
           </p>
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="roadmap row">
       <div class="lines">
         <div class="dot"></div>
         <div class="line" id="ending"></div>
@@ -48,12 +48,29 @@
             <h5>Awarded - Innovative product of the year</h5>
             <p>1 Sep, 2022</p>
           </div>
-          <p>
+          <p class="roadmap-description">
             The EGG headset and Pendulum App is a combination of products that will not only help you in sleeping better, but will also increase your productivity with closed loop brain training. Our EEG headset is comfortable to wear and can be used at work...
           </p>
         </div>
       </div>
     </div>
   </div>
+  <div id="meet-team">
+    <h2 class="center">Meet the Team</h2>
+    <div class="row section">
+      <div class="profile" *ngFor="let person of people">
+        <div class="profile-wrapper">
+          <div class="photo">
+            <img src="../../../assets/{{person.photo}}" *ngIf="person.photo" />
+          </div>
+          <div class="info">
+            <h5>{{person.name}}</h5>
+            <p>{{person.role}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-join-team></app-join-team>
   <app-pre-order></app-pre-order>
 </div>

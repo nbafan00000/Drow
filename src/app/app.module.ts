@@ -26,6 +26,7 @@ import { ForCliniciansComponent } from './pages/home-page/for-clinicians/for-cli
 import { PreOrderComponent } from './pages/home-page/pre-order/pre-order.component';
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { JoinTeamComponent } from './pages/home-page/join-team/join-team.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
     PreOrderComponent,
     BlogPageComponent,
     AboutPageComponent,
+    JoinTeamComponent,
   ],
   imports: [
     BrowserModule,

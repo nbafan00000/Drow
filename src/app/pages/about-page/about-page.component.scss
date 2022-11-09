@@ -4,14 +4,12 @@
   background: url(../../../assets/about-bg.jpg) variables.$background-color; 
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 0 54px 0 63px;
+  padding: 212px 54px 0 63px;
   #about-home {
-    padding: 212px 54px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 89px 2.72% 0 4.17%;
     
     h1 {
       margin: 0;
@@ -35,19 +33,7 @@
       background-color: variables.$background-alternative-color;
       border-radius: 16px;
     }
-    @media only screen and (max-width: 1360px) {
-      justify-content: center;
-      .left {
-        margin-top: 0 !important;
-        margin-right: 0 !important;
-      }
-    }
-    @media only screen and (max-width: variables.$medium-width) {
-      .left {
-        margin-top: 0 !important;
-        margin-right: 0 !important;
-      }
-    }
+   
   }
   #about-content {
     margin-top: 117px;
@@ -61,26 +47,7 @@
       max-width: 943px;
       width: 100%;
     }
-    @media only screen and (max-width: variables.$medium-width) {
-      padding: 84px 21px 60px !important;
-      h2 {
-        width: 100% !important;
-      }
-      p#description {
-        font-size: 22px;
-        line-height: 36px;
-        margin-top: 72px;
-      }
-    }
-    @media only screen and (max-width: variables.$small-width) {
-      padding: 84px 21px 60px !important;
-      p#description {
-        font-size: 16px;
-        line-height: 28px;
-        margin-top: 60px;
-        text-align: left !important;
-      }
-    }
+    
   }
   #about-roadmap {
     margin-top: 197px;
@@ -89,8 +56,9 @@
     p#big-plans {
       margin-bottom: 40px;
     }
-    .row {
+    .roadmap {
       margin-bottom: 18px;
+      align-items: flex-start;
       .lines {
         display: flex;
         flex-direction: column;
@@ -123,7 +91,123 @@
         }
       }
     }
-    
-    
+  }
+  #meet-team {
+    margin-top: 115px;
+    .section {
+      flex-wrap: wrap;
+      .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        margin-top: 44px;
+        .photo {
+          background-color: variables.$background-secondary-color;
+          width: 256px;
+          height: 256px;
+          border-radius: 20px;
+        }
+        h5 {
+          margin-top: 24px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    @media only screen and (max-width: 1178px) {
+      margin-top: 140px;
+      .section {
+        .profile {
+          width: 33%;
+          margin-top: 42px;
+          .photo {
+            width: 200px;
+            height: 200px;
+          }
+          h5 {
+            font-size: 20px !important;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 742px) {
+      margin-top: 96px;
+      .section {
+        .profile {
+          width: 100%;
+          margin-top: 42px;
+          .profile-wrapper {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            .photo {
+              width: 110px;
+              height: 110px;
+            }
+            .info {
+              margin-left: 20px;
+              flex: 1;
+              h5 {
+                font-size: 20px !important;
+              }
+            }
+            
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1360px) {
+    #about-home {
+      #right {
+        margin-top: 20px;
+        height: 436px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: variables.$medium-width) {
+    padding: 99px 35px 0;
+    #about-home {
+      #left {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+      }
+      #right {
+        width: 100%;
+      }
+    }
+    #about-content {
+      padding: 84px 21px 60px !important;
+      h2 {
+        width: 100% !important;
+      }
+      p#description {
+        font-size: 22px;
+        line-height: 36px;
+        margin-top: 72px;
+      }
+    }
+    #about-roadmap {
+      .row {
+        p.roadmap-description {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: variables.$small-width) {
+    padding: 84px 16px 0;
+    #about-content {
+      padding: 84px 21px 60px !important;
+      p#description {
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 60px;
+        text-align: left !important;
+      }
+    }
   }
 }

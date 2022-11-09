@@ -91,31 +91,6 @@
       text-align: center;
     }
   }
-  
-  #about-us {
-    margin-top: 108px;
-    p {
-      margin: 2px 0 32px;
-    }
-    .position {
-      flex: 1;
-      padding: 34px 34.25px 34px 28px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      background-color: variables.$background-secondary-color;
-      align-items: center;
-      border-radius: 14px;
-      margin-top: 16px;
-      h5.title {
-        flex: 1;
-      }
-      h5.location {
-        color: variables.$alternative-blue-color;
-        margin-right: 25.5px;
-      }
-    }
-  }
   #clinicians-wrapper {
     margin-top: 141px;
   }
@@ -226,7 +201,6 @@
       }
     }
   }
-
   @media only screen and (max-width: variables.$small-width) {
     p {
       font-size: 16px !important;

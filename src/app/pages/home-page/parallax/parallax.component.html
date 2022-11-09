@@ -30,16 +30,7 @@
   </div>
   <app-testimonials></app-testimonials>
   <app-pre-order></app-pre-order>
-  <div id="about-us">
-    <h2>Join Our Team</h2>
-    <p class="lowercase">we are hiring</p>
-    <div class="position" *ngFor="let position of positions; let i = index" data-aos="fade-up" [attr.data-aos-delay]="800 * i"
-    data-aos-duration="1000">
-      <h5 class="title">{{position.title}}</h5>
-      <h5 class="location">{{position.location}}</h5>
-      <img src="../../../assets/chevron-right.svg" />
-    </div>
-  </div>
+  <app-join-team></app-join-team>
   <!-- <div class="blog">
     <h2 id="title">Read Our Blog</h2>
     <div class="row-wrapper">

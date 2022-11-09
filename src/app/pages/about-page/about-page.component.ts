@@ -6,7 +6,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-page.component.scss']
 })
 export class AboutPageComponent implements OnInit {
-
+  people = [
+    {
+      name: 'Rakeshkumar G L',
+      role: 'Software Engineer',
+      photo: 'rakesh.png',
+    },
+    {
+      name: 'Anri Iaganashvili',
+      role: 'Product Designer',
+      photo: 'anri-big.png',
+    },
+    {
+    },
+    {
+    },
+    {
+    },
+    {
+    },
+    {
+    },
+    {
+    },
+  ]
   constructor() { }
 
   ngOnInit(): void {
