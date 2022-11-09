@@ -8,6 +8,7 @@
     flex: 1;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     img#footer-logo {
       margin-right: 14%;
       width: 198px;
@@ -60,7 +61,7 @@
     }
   }
   @media only screen and (max-width: variables.$medium-width) {
-    margin: 33.5px 0 45px !important;
+    margin: 38px 0 45px !important;
     padding: 0 32px !important;
     #sleep-companies {
       display: none;
@@ -75,7 +76,7 @@
     }
   }
   @media only screen and (max-width: variables.$small-width) {
-    margin: 0 0 21px !important;
+    margin: 33.5 0 21px !important;
     padding: 0 21px !important;
   }
 }
