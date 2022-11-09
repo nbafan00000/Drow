@@ -1,0 +1,129 @@
+@use "../../variables";
+
+#about {
+  background: url(../../../assets/about-bg.jpg) variables.$background-color; 
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 0 54px 0 63px;
+  #about-home {
+    padding: 212px 54px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 89px 2.72% 0 4.17%;
+    
+    h1 {
+      margin: 0;
+    }
+    h3 {
+      font-size: 28px;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      text-transform: lowercase;
+      font-family: 'Work Sans', sans-serif;
+      margin-top: 16px;
+    }
+    #left {
+      max-width: 585px;
+      margin-top: 110.37px;
+      margin-right: 144px;
+    }
+    #right {
+      width: 645px;
+      height: 559px;
+      background-color: variables.$background-alternative-color;
+      border-radius: 16px;
+    }
+    @media only screen and (max-width: 1360px) {
+      justify-content: center;
+      .left {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+      }
+    }
+    @media only screen and (max-width: variables.$medium-width) {
+      .left {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+      }
+    }
+  }
+  #about-content {
+    margin-top: 117px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    p#description {
+      font-size: 28px;
+      margin-top: 21px;
+      max-width: 943px;
+      width: 100%;
+    }
+    @media only screen and (max-width: variables.$medium-width) {
+      padding: 84px 21px 60px !important;
+      h2 {
+        width: 100% !important;
+      }
+      p#description {
+        font-size: 22px;
+        line-height: 36px;
+        margin-top: 72px;
+      }
+    }
+    @media only screen and (max-width: variables.$small-width) {
+      padding: 84px 21px 60px !important;
+      p#description {
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 60px;
+        text-align: left !important;
+      }
+    }
+  }
+  #about-roadmap {
+    margin-top: 197px;
+    flex: 1;
+
+    p#big-plans {
+      margin-bottom: 40px;
+    }
+    .row {
+      margin-bottom: 18px;
+      .lines {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .dot {
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          background-color: variables.$alternative-color;
+          margin-bottom: 18px;
+        }
+        .line {
+          width: 2px;
+          height: 196px;
+          background-image: linear-gradient(to bottom, #6D71C1, #B9BDFE);
+          &#ending {
+            background-image: linear-gradient(to bottom, #6D71C1, #0C0E2D00);
+          }
+        }
+      }
+      .box {
+        margin-left: 28px;
+        background-color: variables.$background-secondary-color;
+        padding: 24px 38px 16px 33px;
+        .left {
+          flex: 1;
+        }
+        p {
+          max-width: 50%;
+        }
+      }
+    }
+    
+    
+  }
+}

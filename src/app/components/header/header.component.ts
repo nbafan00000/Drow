@@ -30,7 +30,8 @@ export class HeaderComponent implements OnInit {
     },
     {
       label: 'About Us',
-      slug: 'about-us'
+      slug: 'about-us',
+      link: 'about'
     },
   ];
   

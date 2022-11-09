@@ -25,6 +25,7 @@ import { EegContentComponent } from './pages/eeg-page/eeg-content/eeg-content.co
 import { ForCliniciansComponent } from './pages/home-page/for-clinicians/for-clinicians.component';
 import { PreOrderComponent } from './pages/home-page/pre-order/pre-order.component';
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { BlogPageComponent } from './pages/blog-page/blog-page.component';
     ForCliniciansComponent,
     PreOrderComponent,
     BlogPageComponent,
+    AboutPageComponent,
   ],
   imports: [
     BrowserModule,
