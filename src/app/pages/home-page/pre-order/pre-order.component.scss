@@ -42,7 +42,13 @@
     align-items: center;
     flex: 1;
     justify-content: flex-end;
-
+    position: relative;
+    #bitbrain-img {
+      position: absolute;
+      width: 392px;
+      right: 4.35%;
+      bottom: 0;
+    }
   }
 
   @media only screen and (max-width: 990px) {
@@ -54,7 +60,9 @@
         }
       }
     }
-    
+    #bitbrain-img {
+      display: none !important;
+    }
   }
 
   @media only screen and (max-width: variables.$medium-width) {
