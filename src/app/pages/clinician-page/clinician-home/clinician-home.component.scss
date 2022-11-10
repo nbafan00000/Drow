@@ -4,11 +4,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 89px 2.72% 0 4.17%;
+  padding: 171px 2.72% 0 4.17%;
   background: url(../../../../assets/clinicians-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: calc(100vh - 117px);
 
   h3 {
     font-size: 28px;
@@ -21,7 +21,7 @@
   }
   .left {
     max-width: 585px;
-    padding-top: 23.9vh;
+    padding-top: 12.9vh;
     .button-wrapper {
       margin: 51px 0 97.79px;
     }
@@ -30,10 +30,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 9.26vh;
-    flex: 1;
+
     img#apple-set-image {
-      position: relative;
       width: auto;
       height: auto;
     }
@@ -42,13 +40,26 @@
   @media only screen and (max-width: 1160px) {
     flex-direction: column;
     align-items: center;
+    padding: 117px 29px 0 30px !important;
+    min-height: fit-content !important;
+    .left {
+      padding-top: 0 !important;
+    }
+    .right {
+      padding: 75px 0 132px;
+    }
   }
   @media only screen and (max-width: variables.$medium-width) {
     .left {
-      margin-top: 0 !important;
       .button-wrapper {
         margin: 21px 0 8.5px !important;
       }
     }
+    .right {
+      padding: 34px 0 88.75px;
+    }
+  }
+  @media only screen and (max-width: variables.$medium-width) {
+    padding: 113px 17px 0 16px !important;
   }
 }

@@ -1,7 +1,7 @@
 @use "../../../variables";
 
 #clinician-app-works {
-  padding: 101px 52px 72px 52px;
+  padding: 101px 52px 0px 52px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -96,7 +96,8 @@
   .row-logos {
     justify-content: space-between;
     width: 100%;
-    padding: 64px 0 89px 0;
+    margin: 32px 0 44.5px 0;
+    padding: 32px 0 44.5px 0;
     img:first-child {
       margin-left: 31px;
     }
@@ -198,6 +199,7 @@
     }
   }
   @media only screen and (max-width: 990px) {
+    padding: 61px 29px 0px 31px !important;
     .app-works {
       flex-direction: column;
       margin: 37px 0 24px;
@@ -256,6 +258,24 @@
           margin-bottom: 14px !important;
         }
       }
+    }
+    .row-logos {
+      overflow-x: scroll;
+      img {
+        margin-right: 89.54px;
+      }
+      img:first-child {
+        margin-left: 0 !important;
+      }
+      img:last-child {
+        margin-right: 0 !important;
+      }
+    }
+  }
+  @media only screen and (max-width: variables.$medium-width) {
+    padding: 61px 15px 0px 15px !important;
+    .brain-sleep {
+      padding: 23px 16px 0 !important;
     }
   }
 }
