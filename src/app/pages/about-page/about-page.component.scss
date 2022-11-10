@@ -33,7 +33,6 @@
       background-color: variables.$background-alternative-color;
       border-radius: 16px;
     }
-   
   }
   #about-content {
     margin-top: 117px;
@@ -183,7 +182,7 @@
       p#description {
         font-size: 22px;
         line-height: 36px;
-        margin-top: 72px;
+        margin-top: 2px;
       }
     }
     #about-roadmap {
@@ -204,11 +203,11 @@
   @media only screen and (max-width: variables.$small-width) {
     padding: 84px 16px 0;
     #about-content {
-      padding: 84px 21px 60px !important;
+      margin-top: 45px !important;
       p#description {
         font-size: 16px;
         line-height: 28px;
-        margin-top: 60px;
+        margin-top: 12px;
         text-align: left !important;
       }
     }
