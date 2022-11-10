@@ -78,7 +78,30 @@
     .left {
       margin-top: 0 !important;
       .button-wrapper {
-        margin: 21px 0 8.5px !important;
+        margin: 40px 0 49px !important;
+      }
+    }
+    .right {
+      flex-direction: row;
+      overflow-x: scroll;
+      height: 340px;
+      img {
+        max-width: none;
+        margin-right: 19px;
+      }
+    }
+  }
+  @media only screen and (max-width: variables.$small-width) {
+    .left {
+      margin-top: 0 !important;
+      p {
+        font-size: 18px !important;
+      }
+      h5 {
+        font-size: 16px !important;
+      }
+      .button-wrapper {
+        margin: 40px 0 49px !important;
       }
     }
   }
