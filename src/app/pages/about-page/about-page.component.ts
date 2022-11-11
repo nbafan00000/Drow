@@ -25,14 +25,6 @@ export class AboutPageComponent implements OnInit {
       name: 'Håkon Krogh',
       photo: 'hakon.png'
     },
-    {
-    },
-    {
-    },
-    {
-    },
-    {
-    },
   ]
   constructor() { }
 
