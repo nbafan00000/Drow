@@ -9,7 +9,7 @@
     </div>
     <input *ngFor="let field of fields" type="text" placeholder="{{field.label}}"/>
     <app-button label="Continue" [full]="true" (click)="onClose()"></app-button>
-    <button id="close-button" (click)="onClose()">
+    <button (click)="onClose()">
       <img src="../../../assets/close.svg" />
     </button>
   </div>

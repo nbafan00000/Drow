@@ -1,5 +1,5 @@
 <div class="menu" role="banner" [ngClass]="isTop ? 'top' : 'bottom'">
-  <a id="mobile-menu">
+  <a id="mobile-menu" (click)="onOpen()">
     <img src="../../../assets/list.svg" />
     Menu
   </a>
@@ -21,5 +21,17 @@
     <a href="https://apps.apple.com/qa/app/drowzee/id1544281217" class="social-button" [ngClass]="isTop ? 'top' : 'bottom'">
       <img src="../../assets/apple-logo.svg" />
     </a>
+  </div>
+</div>
+<div id="mobile-menu-wrapper" [ngClass]="isMenuOpen ? 'isVisible' : ''">
+  <div id="mobile-menu-content">
+    <button id="close-button" (click)="onClose()">
+      <img src="../../../assets/close.svg" />
+    </button>
+    <div id="item-wrapper">
+      <a aria-label="Brain Training" href="/{{menuItem.link}}" *ngFor="let menuItem of menuItems" class="mobile-menu-item" (click)="onClose()">
+        {{menuItem.label}}
+      </a>
+    </div>
   </div>
 </div>

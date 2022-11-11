@@ -7,7 +7,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   isTop: boolean = true;
-
+  isMenuOpen: boolean = false;
   constructor() { }
   menuItems = [
     {
@@ -42,5 +42,13 @@ export class HeaderComponent implements OnInit {
   @HostListener('window:scroll', [])
   onScroll(): void {
     this.isTop = window.scrollY === 0;
+  }
+
+  onClose() {
+    this.isMenuOpen = false;
+  }
+
+  onOpen() {
+    this.isMenuOpen = true;
   }
 }
