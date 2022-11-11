@@ -18,8 +18,12 @@ export class AboutPageComponent implements OnInit {
       photo: 'anri-big.png',
     },
     {
+      name: 'Eidan Tzdaka',
+      photo: 'eidan.png'
     },
     {
+      name: 'Håkon Krogh',
+      photo: 'hakon.png'
     },
     {
     },
