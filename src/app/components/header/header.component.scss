@@ -128,11 +128,13 @@
       background-color: variables.$primary-color;
       display: flex;
       flex-direction: column;
-      padding: 38px 17px 14px 18px;
+      padding: 38px 17px 0 18px;
       align-items: flex-start;
-      width: 426px;
+      max-width: 426px;
+      width: 100%;
       height: 100vh;
       position: relative;
+      overflow: scroll;
       button {
         background-color: transparent;
         img {
@@ -143,12 +145,44 @@
       #item-wrapper {
         display: flex;
         flex-direction: column;
-        margin: 69px 0 0 24px;
+        margin: 64px 0 0 24px;
         flex: 1;
       }
       .mobile-menu-item {
         margin-bottom: 56px;
         font-size: 24px;
+      }
+      .pre-order {
+        background: linear-gradient(8.03deg, #4C48F4 -1.05%, #9193FF 37.48%);
+        border-radius: 14px;
+        display: flex;
+        flex-direction: column;
+        padding: 14px 26px 0 27px;
+        margin-bottom: 52px;
+        .social-wrapper {
+          margin-top: 22px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .social-button {
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            width: 56px;
+            height: 56px;
+          }
+        }
+        #image-wrapper {
+          overflow: hidden;
+          margin-top: 19.68px;
+          height: 205.32px;
+          img#iphone {
+            object-fit: contain;
+          }
+        }
       }
     }
   }
