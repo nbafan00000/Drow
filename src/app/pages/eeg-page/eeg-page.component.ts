@@ -15,19 +15,19 @@ export class EegPageComponent implements OnInit {
   }
 
   makePayment(amount: any) {
-    const paymentHandler = (<any>window).StripeCheckout.configure({
-      key: this.api_key,
-      locale: 'auto',
-      token: function (stripeToken: any) {
-        console.log(stripeToken);
-        alert('Stripe token generated!');
-      },
-    });
-    paymentHandler.open({
-      name: 'EEG Headset',
-      description: "Drowzee's Pendulum Sleep Kit",
-      amount: amount * 100,
-    });
+    // const paymentHandler = (<any>window).StripeCheckout.configure({
+    //   key: this.api_key,
+    //   locale: 'auto',
+    //   token: function (stripeToken: any) {
+    //     console.log(stripeToken);
+    //     alert('Stripe token generated!');
+    //   },
+    // });
+    // paymentHandler.open({
+    //   name: 'EEG Headset',
+    //   description: "Drowzee's Pendulum Sleep Kit",
+    //   amount: amount * 100,
+    // });
   }
   invokeStripe() {
     if (!window.document.getElementById('stripe-script')) {
