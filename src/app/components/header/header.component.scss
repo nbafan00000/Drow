@@ -138,6 +138,9 @@
       height: 100vh;
       position: relative;
       overflow: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
       button {
         background-color: transparent;
         img {
