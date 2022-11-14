@@ -8,6 +8,7 @@ import { Component, Input, Output, OnInit, EventEmitter } from '@angular/core';
 export class ButtonComponent implements OnInit {
   @Input() type: string = 'primary';
   @Input() label: string = '';
+  @Input() link: string = '';
   hover: boolean = false;
   @Input() disabled: boolean = false;
   @Input() full: boolean = false;
