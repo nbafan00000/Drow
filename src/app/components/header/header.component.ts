@@ -16,7 +16,8 @@ export class HeaderComponent implements OnInit {
     },
     {
       label: 'Sleep Diary',
-      slug: 'sleep-diary'
+      slug: 'sleep-diary',
+      link: '#sleep-diary'
     },
     {
       label: 'EEG Headset',

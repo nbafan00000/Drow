@@ -8,14 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class AboutPageComponent implements OnInit {
   people = [
     {
-      name: 'Rakeshkumar G L',
-      role: 'Software Engineer',
-      photo: 'rakesh.png',
-    },
-    {
-      name: 'Anri Iaganashvili',
-      role: 'Product Designer',
-      photo: 'anri-big.png',
+      name: 'Håkon Krogh',
+      photo: 'hakon.png',
+      role: 'CEO & Co-Founder'
     },
     {
       name: 'Eidan Tzdaka',
@@ -23,9 +18,14 @@ export class AboutPageComponent implements OnInit {
       role: 'CTO & Co-Founder'
     },
     {
-      name: 'Håkon Krogh',
-      photo: 'hakon.png',
-      role: 'CEO & Co-Founder'
+      name: 'Anri Iaganashvili',
+      role: 'Product Designer',
+      photo: 'anri-big.png',
+    },
+    {
+      name: 'Rakeshkumar G L',
+      role: 'Software Engineer',
+      photo: 'rakesh.png',
     },
   ]
   constructor() { }
