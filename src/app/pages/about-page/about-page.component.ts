@@ -19,11 +19,13 @@ export class AboutPageComponent implements OnInit {
     },
     {
       name: 'Eidan Tzdaka',
-      photo: 'eidan.png'
+      photo: 'eidan.png',
+      role: 'CTO & Co-Founder'
     },
     {
       name: 'Håkon Krogh',
-      photo: 'hakon.png'
+      photo: 'hakon.png',
+      role: 'CEO & Co-Founder'
     },
   ]
   constructor() { }
