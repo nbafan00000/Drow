@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-parallax',
@@ -8,12 +7,8 @@ import { Router } from "@angular/router";
 })
 export class ParallaxComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  redirectToHeadset() {
-    this.router.navigateByUrl('/eeg-headset#pre-order');
   }
 }

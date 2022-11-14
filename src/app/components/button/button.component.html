@@ -1,12 +1,10 @@
-<a [routerLink]="link ? link : '.'">
-  <button
-    [ngStyle]="{'background-color': !disabled ? (hover ? colors[type].bgColor : colors[type].hoverColor) : colors[type].disabledColor }"
-    (mouseover)="hover=true"
-    (mouseleave)="hover=false"
-    [disabled]="disabled"
-    (click)="onClick"
-    [ngClass]="full ? 'full-width' : ''"
-  >
-    {{label}}
-  </button>
-</a>
+<button
+  [ngStyle]="{'background-color': !disabled ? (hover ? colors[type].bgColor : colors[type].hoverColor) : colors[type].disabledColor }"
+  (mouseover)="hover=true"
+  (mouseleave)="hover=false"
+  [disabled]="disabled"
+  (click)="onClick"
+  [ngClass]="full ? 'full-width' : ''"
+>
+  {{label}}
+</button>

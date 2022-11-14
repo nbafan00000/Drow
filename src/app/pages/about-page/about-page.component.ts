@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-about-page',
@@ -29,12 +28,8 @@ export class AboutPageComponent implements OnInit {
       photo: 'rakesh.png',
     },
   ]
-  constructor(private router: Router) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  redirectToHeadset() {
-    this.router.navigate(['/eeg-headset']);
   }
 }
