@@ -3,7 +3,7 @@
     <h3>Try Drowzee now</h3>
     <p class="lowercase">We have android and ios apps.</p>
     <div class="button-wrapper">
-      <app-button label="Pre-order"></app-button>
+      <app-button [label]="label" (click)="onClick()"></app-button>
       <div class="social-wrapper">
         <h4>Download the app:</h4>
         <a href="https://play.google.com/store/apps/details?id=com.polydelic.drowzee" class="social-button">

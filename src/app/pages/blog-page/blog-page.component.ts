@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { SwiperComponent } from "swiper/angular";
+import { Router } from "@angular/router";
 
 // import Swiper core and required modules
 import SwiperCore, { Pagination } from "swiper";
@@ -15,7 +15,7 @@ SwiperCore.use([Pagination]);
 })
 export class BlogPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -23,7 +23,12 @@ export class BlogPageComponent implements OnInit {
   onSwiper([swiper]: [any]) {
     console.log(swiper);
   }
+  
   onSlideChange() {
     console.log('slide change');
+  }
+
+  redirectToHeadset() {
+    this.router.navigateByUrl('/eeg-headset#pre-order');
   }
 }

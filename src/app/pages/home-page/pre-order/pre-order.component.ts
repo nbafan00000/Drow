@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-pre-order',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pre-order.component.scss']
 })
 export class PreOrderComponent implements OnInit {
-
+  //@Output() click = new EventEmitter<null>();
+  @Input() label: string = 'Pre-order';
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onClick() {
+    console.log('here---');
+    //this.click.emit();
+  }
 }
