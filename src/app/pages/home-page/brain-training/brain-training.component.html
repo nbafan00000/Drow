@@ -1,11 +1,19 @@
 <div id="brain-training">
   <div class="wrapper">
     <h2>Strengthen Your Brain,<br/>One Session at a time</h2>
-    <div class="iphone">
-      <img src="../../../assets/iPhone-14-plus.png" id="iphone-14" [style.width.%]="iPhoneWidth" />
-      <img src="../../../assets/Card.png" id="card" [style.width.px]="cardWidth" [style.top.px]="cardTop1" />
-      <img src="../../../assets/2Card.png" id="card2" [style.width.px]="cardWidth2" [style.top.px]="cardTop2" />
-      <img src="../../../assets/1Card.png" id="card3" [style.width.px]="cardWidth3" [style.top.px]="cardTop3"/>
+    <div class="row wrapper-row">
+      <div class="iphone">
+        <img src="../../../assets/iPhone-14-plus.png" id="iphone-14" [style.width.%]="iPhoneWidth" />
+        <img src="../../../assets/Card.png" id="card" [style.width.px]="cardWidth" [style.top.px]="cardTop1" />
+        <img src="../../../assets/2Card.png" id="card2" [style.width.px]="cardWidth2" [style.top.px]="cardTop2" />
+        <img src="../../../assets/1Card.png" id="card3" [style.width.px]="cardWidth3" [style.top.px]="cardTop3"/>
+      </div>
+      <div class="text" [style.width.px]="width > 834 ? textWidth : '100%'" [ngClass]="(width > 834 && scrollHeight < 100) ? 'hidden' : 'visible'">
+        <div class="row text-row" *ngFor="let item of texts; let i = index" [attr.data-aos-anchor-placement]="width < 834 ? 'top-top' : 'bottom-bottom'" data-aos="fade-up" data-aos-duration="800" [attr.data-aos-delay]="400 * i">
+          <img src="../../../assets/{{item.icon}}.svg" /><p>{{item.text}}</p>
+        </div>
+        <h4 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="800" data-aos-delay="2000">Download the app:</h4>
+      </div>
     </div>
   </div>
 </div>

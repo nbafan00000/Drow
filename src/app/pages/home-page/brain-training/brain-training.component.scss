@@ -13,33 +13,65 @@
     padding: 0 0 69px;
     position: sticky;
     top: 75px;
-    .iphone {
-      margin-top: 70px;
-      position: relative;
-      width: 602px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      img {
-        position: absolute;
+    .wrapper-row {
+      height: 648px;
+      .iphone {
+        margin-top: 70px;
+        position: relative;
+        width: 602px;
+  
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          position: absolute;
+        }
+        img#card {
+          position: absolute;
+          top: 209px;
+        }
+        img#card2 {
+          position: absolute;
+          top: 594px;
+          width: 740px;
+        }
+        img#card3 {
+          position: absolute;
+          top: 999.11px;
+          width: 800px;
+        }
       }
-      img#card {
-        position: absolute;
-        top: 209px;
-      }
-      img#card2 {
-        position: absolute;
-        top: 594px;
-        width: 740px;
-      }
-      img#card3 {
-        position: absolute;
-        top: 999.11px;
-        width: 800px;
+      .text {
+        overflow: hidden;
+        margin-top: 130px;
+        &.visible {
+          visibility: visible;
+        }
+        &.hidden {
+          visibility: hidden;
+        }
+        .text-row {
+          align-items: center;
+          margin-top: 16px;
+          img {
+            margin-right: 16px;
+          }
+          p {
+            font-size: 24px;
+            color: white;
+            white-space: nowrap;
+          }
+        }
+        h4 {
+          font-size: 22px;
+          font-weight: 700;
+          margin-top: 70px;
+        }
       }
     }
   }
+
   h2 {
     max-width: 704px;
     width: 100%;
@@ -47,7 +79,18 @@
   }
   
   @media only screen and (max-width: variables.$medium-width) {
-    padding: 75px 14.2% !important;
+    padding: 75px 5.2% !important;
+    .wrapper-row {
+      flex-direction: column-reverse !important;
+      align-items: center;
+      height: auto !important;
+      #iphone-14 {
+        position: relative !important;
+      }
+      .text {
+        margin-top: 14px !important;
+      }
+    }
   }
   @media only screen and (max-width: variables.$small-width) {
     padding: 43px 0% !important;
