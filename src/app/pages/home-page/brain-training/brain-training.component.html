@@ -12,7 +12,17 @@
         <div class="row text-row" *ngFor="let item of texts; let i = index" [attr.data-aos-anchor-placement]="width < 834 ? 'top-top' : 'bottom-bottom'" data-aos="fade-up" data-aos-duration="800" [attr.data-aos-delay]="400 * i">
           <img src="../../../assets/{{item.icon}}.svg" /><p>{{item.text}}</p>
         </div>
-        <h4 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="800" data-aos-delay="2000">Download the app:</h4>
+        <div class="social-wrapper" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="800" data-aos-delay="2000">
+          <h4>Download the app:</h4>
+          <div class="row">
+            <a href="https://play.google.com/store/apps/details?id=com.polydelic.drowzee" class="social-button">
+              <img src="../../assets/google-play-logo.svg" />
+            </a>
+            <a href="https://apps.apple.com/qa/app/drowzee/id1544281217" class="social-button">
+              <img src="../../assets/apple-logo.svg" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
