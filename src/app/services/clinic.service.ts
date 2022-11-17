@@ -16,29 +16,29 @@ export interface Clinic {
   providedIn: 'root'
 })
 export class ClinicService {
-    private apiURL = "https://drowzee-11e53.ew.r.appspot.com/api/clinic-enquiry"; //YOUR API URL
-    httpOptions = {
-        headers: new HttpHeaders({
-            'Content-Type': 'application/json'
-        })
+  private apiURL = "https://drowzee-11e53.ew.r.appspot.com/api/clinic-enquiry"; //YOUR API URL
+  httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json'
+    })
+  }
+  constructor(private httpClient: HttpClient) {}
+  
+  postClinic(clinic: Clinic): Observable < Clinic > {
+    return this.httpClient.post < Clinic > (this.apiURL, JSON.stringify(clinic), this.httpOptions).pipe(catchError(this.errorHandler))
+  }
+  
+  errorHandler(error: {
+    error: {
+      message: string;
+    };status: any;message: any;
+  }) {
+    let errorMessage = '';
+    if (error.error instanceof ErrorEvent) {
+      errorMessage = error.error.message;
+    } else {
+      errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
     }
-    constructor(private httpClient: HttpClient) {}
-   
-    postClinic(clinic: Clinic): Observable < Clinic > {
-        return this.httpClient.post < Clinic > (this.apiURL, JSON.stringify(clinic), this.httpOptions).pipe(catchError(this.errorHandler))
-    }
-    
-    errorHandler(error: {
-        error: {
-            message: string;
-        };status: any;message: any;
-    }) {
-        let errorMessage = '';
-        if (error.error instanceof ErrorEvent) {
-            errorMessage = error.error.message;
-        } else {
-            errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
-        }
-        return throwError(errorMessage);
-    }
+    return throwError(errorMessage);
+  }
 }
