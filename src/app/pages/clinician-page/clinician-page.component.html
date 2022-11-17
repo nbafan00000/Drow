@@ -2,13 +2,16 @@
 <app-clinician-app-works (openModal)="openModal($event)"></app-clinician-app-works>
 <div class="modal" [ngClass]="isModalOpen ? 'isVisible' : ''">
   <div class="modal-content">
-    <h5 class="center">Get Started</h5>
-    <p class="center">Choose Service you want to be enrolled</p>
-    <div class="row form-row">
+    <h5 class="center" *ngIf="!completed">Get Started</h5>
+    <p class="center" *ngIf="!completed">Choose Service you want to be enrolled</p>
+    <div class="row form-row" *ngIf="!completed">
       <app-interest-buttons [selected]="selected" (select)="onSelect($event)"></app-interest-buttons>
     </div>
-    <input *ngFor="let field of fields" type="{{field.type}}" placeholder="{{field.label}}" [(ngModel)]="field.value" />
-    <app-button label="Continue" [full]="true" (click)="onContinue()"></app-button>
+    <div *ngIf="!completed">
+      <input *ngFor="let field of fields" type="{{field.type}}" placeholder="{{field.label}}" [(ngModel)]="field.value" />
+    </div>
+    <app-button label="Continue" [full]="true" (click)="onContinue()" *ngIf="!completed"></app-button>
+    <h5 class="center" *ngIf="completed">Thank you for registering to Drowzee Clinician, we will get in touch very shortly.</h5>
     <button (click)="onClose()">
       <img src="../../../assets/close.svg" />
     </button>

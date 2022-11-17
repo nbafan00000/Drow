@@ -42,6 +42,7 @@ export class ClinicianPageComponent implements OnInit {
       value: "",
     }
   ];
+  completed: boolean = false;
 
   constructor(private httpClient: HttpClient) { 
     this.clinicService = new ClinicService(httpClient);
@@ -56,6 +57,7 @@ export class ClinicianPageComponent implements OnInit {
   }
   
   openModal($event: number) {
+    this.completed = false;
     this.selected = $event;
     this.isModalOpen = true;
   }
@@ -75,7 +77,7 @@ export class ClinicianPageComponent implements OnInit {
       clinicEnquiryModel: data
     }).subscribe((result: any) => {
       if(result && result.status) {
-        this.onClose();
+        this.completed = true;
       } else {
         alert('An error has occured, please try again!');
       }

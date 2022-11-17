@@ -13,7 +13,7 @@ export class EegPageComponent implements OnInit {
   api_key: string = 'sk_test_XVb6swcroYsD8swF8MkDyZET00kthAuhxf';
   isModalOpen: boolean = false;
   orderUid: string = '';
-
+  completed: boolean = false;
   fields = [
     {
       id: 'firstName',
@@ -114,7 +114,7 @@ export class EegPageComponent implements OnInit {
               }
             }).subscribe((result: any) => {
               if(result && result.status) {
-                this.onClose();
+                this.completed = true;
               } else {
                 alert('An error has occured, please try again!');
               }
@@ -127,6 +127,7 @@ export class EegPageComponent implements OnInit {
   }
 
   openModal() {
+    this.completed = false;
     this.isModalOpen = true;
   }
 

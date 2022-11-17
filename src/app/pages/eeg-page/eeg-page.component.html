@@ -10,9 +10,12 @@
 </div>
 <div class="modal" [ngClass]="isModalOpen ? 'isVisible' : ''">
   <div class="modal-content">
-    <h5 class="center">Delivery Details</h5>
-    <input *ngFor="let field of fields" type="{{field.type}}" placeholder="{{field.label}}" [(ngModel)]="field.value" />
-    <app-button label="Continue" [full]="true" (click)="onContinue()"></app-button>
+    <h5 class="center" *ngIf="!completed">Delivery Details</h5>
+    <div *ngIf="!completed">
+      <input *ngFor="let field of fields" type="{{field.type}}" placeholder="{{field.label}}" [(ngModel)]="field.value" />
+    </div>
+    <app-button label="Continue" [full]="true" (click)="onContinue()" *ngIf="!completed"></app-button>
+    <h5 class="center" *ngIf="completed">Thank you for registering to Drowzee Clinician, we will get in touch very shortly.</h5>
     <button (click)="onClose()">
       <img src="../../../assets/close.svg" />
     </button>
