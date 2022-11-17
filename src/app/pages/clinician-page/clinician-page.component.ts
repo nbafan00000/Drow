@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ClinicService, Clinic } from 'src/app/services/clinic.service';
+import { ClinicService } from 'src/app/services/clinic.service';
 
 @Component({
   selector: 'app-clinician-page',
@@ -10,7 +10,6 @@ import { ClinicService, Clinic } from 'src/app/services/clinic.service';
 export class ClinicianPageComponent implements OnInit {
   selected = 0;
   clinicService: any;
-  fullName = "";
   fields = [
     {
       id: 'fullName',
@@ -42,7 +41,6 @@ export class ClinicianPageComponent implements OnInit {
       type: "email",
       value: "",
     }
-    
   ];
 
   constructor(private httpClient: HttpClient) { 
@@ -67,7 +65,6 @@ export class ClinicianPageComponent implements OnInit {
   }
 
   onContinue() {
-    console.log('this.fie--', this.fields);
     const data: any = {
       createdDatetime: new Date().toDateString(),
     };
@@ -80,7 +77,7 @@ export class ClinicianPageComponent implements OnInit {
       if(result && result.status) {
         this.onClose();
       } else {
-        alert('An error has occured, please try again!')
+        alert('An error has occured, please try again!');
       }
     })
   }

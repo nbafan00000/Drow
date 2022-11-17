@@ -4,13 +4,15 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {  Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 export interface Clinic {
-  clinicName?: string,
-  cliniciAddress?: string,
-  cliniemail?: string,
-  createdDatetime: string,
-  fullName?: string,
-  service?: string,
-  uid?: string,
+  clinicEnquiryModel: {
+    clinicName?: string,
+    cliniciAddress?: string,
+    cliniemail?: string,
+    createdDatetime: string,
+    fullName?: string,
+    service?: string,
+    uid?: string,
+  }
 }
 @Injectable({
   providedIn: 'root'
@@ -24,8 +26,8 @@ export class ClinicService {
   }
   constructor(private httpClient: HttpClient) {}
   
-  postClinic(clinic: Clinic): Observable < Clinic > {
-    return this.httpClient.post < Clinic > (this.apiURL, JSON.stringify(clinic), this.httpOptions).pipe(catchError(this.errorHandler))
+  postClinic(clinic: Clinic): Observable <Clinic> {
+    return this.httpClient.post <Clinic> (this.apiURL, JSON.stringify(clinic), this.httpOptions).pipe(catchError(this.errorHandler))
   }
   
   errorHandler(error: {

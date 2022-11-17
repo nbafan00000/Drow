@@ -31,7 +31,7 @@ export interface OrderUpdate {
 @Injectable({
   providedIn: 'root'
 })
-export class Payment {
+export class PaymentService {
   private apiURL = "https://drowzee-11e53.ew.r.appspot.com/api";
   httpOptions = {
     headers: new HttpHeaders({
@@ -59,6 +59,7 @@ export class Payment {
     } else {
       errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
     }
+    alert('An error has occured. Please try again.\n' + errorMessage);
     return throwError(errorMessage);
   }
 }

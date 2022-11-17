@@ -18,3 +18,60 @@
     }
   }
 }
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(1, 5, 23, 0.7);
+  display: none;
+  z-index: 2;
+  
+  &.isVisible {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    .modal-content {
+      background-color: variables.$background-secondary-color;
+      display: flex;
+      flex-direction: column;
+      padding: 39px 141px 47px;
+      align-items: stretch;
+      width: 90%;
+      max-width: 894px;
+      position: relative;
+      .form-row {
+        margin: 10px 0 26px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      p {
+        font-size: 14px;
+        color: variables.$alternative-blue-color;
+      }
+      button {
+        background-color: transparent;
+        position: absolute;
+        top: 40.63px;
+        right: 41.63px;
+      }
+      input[type=text], input[type=email] {
+        height: 52px;
+        width: 100%;
+        margin-bottom: 18px;
+        background-color: transparent;
+        outline: none;
+        border: 0;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        color: white;
+        font-size: 18px;
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+    }
+  }
+}

@@ -2,9 +2,20 @@
 <app-eeg-content></app-eeg-content>
 <div class="container">
   <div id="pre-order">
-    <app-pre-order (click)="makePayment(400)"></app-pre-order>
+    <app-pre-order (click)="openModal()"></app-pre-order>
   </div>
   <div id="eeg-clinicians-wrapper">
     <app-for-clinicians></app-for-clinicians>
+  </div>
+</div>
+<div class="modal" [ngClass]="isModalOpen ? 'isVisible' : ''">
+  <div class="modal-content">
+    <h5 class="center">Get Started</h5>
+    <p class="center">Choose Service you want to be enrolled</p>
+    <input *ngFor="let field of fields" type="{{field.type}}" placeholder="{{field.label}}" [(ngModel)]="field.value" />
+    <app-button label="Continue" [full]="true" (click)="onContinue()"></app-button>
+    <button (click)="onClose()">
+      <img src="../../../assets/close.svg" />
+    </button>
   </div>
 </div>
