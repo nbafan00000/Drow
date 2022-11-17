@@ -7,8 +7,8 @@
     <div class="row form-row">
       <app-interest-buttons [selected]="selected" (select)="onSelect($event)"></app-interest-buttons>
     </div>
-    <input *ngFor="let field of fields" type="text" placeholder="{{field.label}}"/>
-    <app-button label="Continue" [full]="true" (click)="onClose()"></app-button>
+    <input *ngFor="let field of fields" type="{{field.type}}" placeholder="{{field.label}}" [(ngModel)]="field.value" />
+    <app-button label="Continue" [full]="true" (click)="onContinue()"></app-button>
     <button (click)="onClose()">
       <img src="../../../assets/close.svg" />
     </button>
