@@ -114,7 +114,7 @@ export class EegPageComponent implements OnInit {
               }
             }).subscribe((result: any) => {
               if(result && result.status) {
-                this.makePayment(400);
+                this.onClose();
               } else {
                 alert('An error has occured, please try again!');
               }
