@@ -14,7 +14,5 @@ export class PreOrderComponent implements OnInit {
   }
 
   onClick() {
-    console.log('here---');
-    //this.click.emit();
   }
 }

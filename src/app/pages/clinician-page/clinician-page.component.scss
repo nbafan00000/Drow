@@ -22,8 +22,10 @@
       padding: 39px 141px 47px;
       align-items: stretch;
       width: 90%;
-      max-width: 894px;
+      max-width: 612px;
       position: relative;
+      overflow-y: scroll;
+      overflow-x: hidden;
       .form-row {
         margin: 10px 0 26px;
         display: flex;
@@ -52,6 +54,12 @@
         font-size: 18px;
         &::placeholder {
           color: rgba(255, 255, 255, 0.6);
+        }
+      }
+      @media only screen and (max-width: 894px) {
+        padding: 39px 5% 47px !important;
+        button {
+          right: 5% !important;
         }
       }
     }

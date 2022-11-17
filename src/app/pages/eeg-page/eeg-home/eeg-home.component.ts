@@ -11,5 +11,7 @@ export class EegHomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  onClick() {
+  }
 }

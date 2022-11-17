@@ -1,4 +1,4 @@
-<app-eeg-home></app-eeg-home>
+<app-eeg-home (click)="openModal()"></app-eeg-home>
 <app-eeg-content></app-eeg-content>
 <div class="container">
   <div id="pre-order">
@@ -10,8 +10,7 @@
 </div>
 <div class="modal" [ngClass]="isModalOpen ? 'isVisible' : ''">
   <div class="modal-content">
-    <h5 class="center">Get Started</h5>
-    <p class="center">Choose Service you want to be enrolled</p>
+    <h5 class="center">Delivery Details</h5>
     <input *ngFor="let field of fields" type="{{field.type}}" placeholder="{{field.label}}" [(ngModel)]="field.value" />
     <app-button label="Continue" [full]="true" (click)="onContinue()"></app-button>
     <button (click)="onClose()">
