@@ -1,4 +1,4 @@
-<app-clinician-home></app-clinician-home>
+<app-clinician-home (openModal)="openModal($event)"></app-clinician-home>
 <app-clinician-app-works (openModal)="openModal($event)"></app-clinician-app-works>
 <div class="modal" [ngClass]="isModalOpen ? 'isVisible' : ''">
   <div class="modal-content">
