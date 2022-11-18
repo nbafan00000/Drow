@@ -84,7 +84,6 @@ export class EegPageComponent implements OnInit {
       key: this.api_key,
       locale: 'auto',
       token: function (stripeToken: any) {
-        console.log(stripeToken);
         alert('Stripe token generated!');
       },
     });
